@@ -1,0 +1,173 @@
+[ {
+  "command" : "createPlaylist",
+  "user" : "emily30",
+  "timestamp" : 150,
+  "message" : "Playlist created successfully."
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 170,
+  "message" : "Search returned 1 results",
+  "results" : [ "Going Bad" ]
+}, {
+  "command" : "select",
+  "user" : "emily30",
+  "timestamp" : 190,
+  "message" : "Successfully selected Going Bad."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 195,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "emily30",
+  "timestamp" : 240,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 270,
+  "message" : "Search returned 1 results",
+  "results" : [ "Swimming Pools (Drank)" ]
+}, {
+  "command" : "select",
+  "user" : "emily30",
+  "timestamp" : 290,
+  "message" : "Successfully selected Swimming Pools (Drank)."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 300,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "emily30",
+  "timestamp" : 340,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 1000,
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 1140,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "select",
+  "user" : "emily30",
+  "timestamp" : 1190,
+  "message" : "Successfully selected My favourite songs."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 1195,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 1220,
+  "stats" : {
+    "name" : "Start Me Up",
+    "remainedTime" : 37,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 1250,
+  "stats" : {
+    "name" : "Start Me Up",
+    "remainedTime" : 7,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 1320,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 170,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 2000,
+  "message" : "Search returned 2 results",
+  "results" : [ "The Daily", "The Daily Show With Trevor Noah" ]
+}, {
+  "command" : "select",
+  "user" : "emily30",
+  "timestamp" : 2190,
+  "message" : "Successfully selected The Daily."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 2200,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 3220,
+  "stats" : {
+    "name" : "The Capitol Riot, 1 Year Later",
+    "remainedTime" : 350,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 3920,
+  "stats" : {
+    "name" : "Inside the Vaccine Mandate Showdown",
+    "remainedTime" : 1061,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 4200,
+  "message" : "Search returned 3 results",
+  "results" : [ "DNA.", "Championships", "99 Problems" ]
+}, {
+  "command" : "select",
+  "user" : "emily30",
+  "timestamp" : 4220,
+  "message" : "Successfully selected Championships."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 4330,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 4350,
+  "message" : "Playback loaded successfully."
+} ]
