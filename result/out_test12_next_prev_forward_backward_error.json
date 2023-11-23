@@ -52,6 +52,16 @@
   "message" : "Search returned 1 results",
   "results" : [ "My favourite songs" ]
 }, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 1120,
+  "message" : "Please load a source before returning to the previous track."
+}, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 1130,
+  "message" : "Please load a source before skipping to the next track."
+}, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 1140,
@@ -77,40 +87,65 @@
   "user" : "emily30",
   "timestamp" : 1220,
   "stats" : {
-    "name" : "Start Me Up",
+    "name" : "Going Bad",
+    "remainedTime" : 155,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 1240,
+  "message" : "Skipped to next track successfully. The current track is Swimming Pools (Drank)."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 1250,
+  "stats" : {
+    "name" : "Swimming Pools (Drank)",
+    "remainedTime" : 237,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 1260,
+  "message" : "Returned to previous track successfully. The current track is Swimming Pools (Drank)."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 1320,
+  "stats" : {
+    "name" : "Swimming Pools (Drank)",
     "remainedTime" : 187,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
 }, {
-  "command" : "status",
+  "command" : "forward",
   "user" : "emily30",
-  "timestamp" : 1250,
-  "stats" : {
-    "name" : "Start Me Up",
-    "remainedTime" : 157,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 1350,
+  "message" : "The loaded source is not a podcast."
 }, {
-  "command" : "status",
+  "command" : "backward",
   "user" : "emily30",
-  "timestamp" : 1320,
-  "stats" : {
-    "name" : "Start Me Up",
-    "remainedTime" : 87,
-    "repeat" : "No Repeat",
-    "shuffle" : false,
-    "paused" : false
-  }
+  "timestamp" : 1390,
+  "message" : "The loaded source is not a podcast."
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 2000,
   "message" : "Search returned 2 results",
   "results" : [ "The Daily", "The Daily Show With Trevor Noah" ]
+}, {
+  "command" : "forward",
+  "user" : "emily30",
+  "timestamp" : 2120,
+  "message" : "Please load a source before attempting to forward."
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -122,27 +157,42 @@
   "timestamp" : 2200,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "forward",
+  "user" : "emily30",
+  "timestamp" : 3120,
+  "message" : "Skipped forward successfully."
+}, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 3220,
   "stats" : {
     "name" : "The Capitol Riot, 1 Year Later",
-    "remainedTime" : 350,
+    "remainedTime" : 440,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "forward",
+  "user" : "emily30",
+  "timestamp" : 3520,
+  "message" : "Skipped forward successfully."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 3920,
   "stats" : {
     "name" : "Inside the Vaccine Mandate Showdown",
-    "remainedTime" : 1061,
+    "remainedTime" : 1241,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 4120,
+  "message" : "Skipped to next track successfully. The current track is The Battle for Abortion Rights."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -154,6 +204,11 @@
   "user" : "emily30",
   "timestamp" : 4220,
   "message" : "Successfully selected Championships."
+}, {
+  "command" : "forward",
+  "user" : "emily30",
+  "timestamp" : 4290,
+  "message" : "Please load a source before attempting to forward."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -170,4 +225,9 @@
   "user" : "emily30",
   "timestamp" : 4350,
   "message" : "Playback loaded successfully."
+}, {
+  "command" : "backward",
+  "user" : "emily30",
+  "timestamp" : 4390,
+  "message" : "The loaded source is not a podcast."
 } ]

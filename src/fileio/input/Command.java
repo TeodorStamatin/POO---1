@@ -213,14 +213,14 @@ public class Command {
             loadedSong = false;
             loadedPodcast = false;
             loadedPlaylist = true;
-            if(currentPlaylistState != null && currentPlaylist.getName().equals(currentPlaylistState.getSelectedPlaylistName())) {
+            if(currentPlaylistState != null && currentPlaylist.getName().equals(currentPlaylistState.getSelectedPlaylistName()) && currentPlaylistState.getOwner().equalsIgnoreCase(username)) {
                 currentPlaylistState.setInitialTimestamp(timestamp);
                 currentPlaylistState.setLastTimestamp(timestamp);
                 currentPlaylistState.setPaused(false);
                 currentPlaylistState.reset();
             } else {
                 //String repeatStateText = RepeatStateConverter.convertToText(repeatState, loadedSong, loadedPlaylist, loadedPodcast);
-                currentPlaylistState = new PlaylistState(currentPlaylist.getName(), shuffleState, !isPlaying, "No Repeat", timestamp, timestamp, currentPlaylist.getSongs());
+                currentPlaylistState = new PlaylistState(currentPlaylist.getName(), shuffleState, !isPlaying, "No Repeat", timestamp, timestamp, currentPlaylist.getSongs(), username);
                 currentPlaylistState.reset();
             }
             if(currentPlayerState != null) {
@@ -643,7 +643,7 @@ public class Command {
             boolean playlistExists = user.playlistExists(playlistName);
 
             if (!playlistExists) {
-                user.createPlaylist(playlistName, 1);
+                user.createPlaylist(playlistName, 1, username);
 
                 ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
                 outputNode.put("command", "createPlaylist");
@@ -910,5 +910,208 @@ public class Command {
             jsonArray.add(item.getName());
         }
         return jsonArray;
+    }
+
+    public static void handleNextCommand(LibraryInput library, JsonNode commandNode, ArrayNode outputs) {
+        String username = commandNode.get("username").asText();
+        int timestamp = commandNode.get("timestamp").asInt();
+
+        if (loadedSong || loadedPodcast || loadedPlaylist) {
+            if (loadedSong) {
+                boolean stopped = currentPlayerState.next(timestamp);
+                if(stopped) {
+                    loadedSong = false;
+                    ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                    outputNode.put("command", "next");
+                    outputNode.put("user", username);
+                    outputNode.put("timestamp", timestamp);
+                    outputNode.put("message", "Please load a source before skipping to the next track.");
+
+                    // Add the output to the outputs array
+                    outputs.add(outputNode);
+                } else {
+                    ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                    outputNode.put("command", "next");
+                    outputNode.put("user", username);
+                    outputNode.put("timestamp", timestamp);
+                    outputNode.put("message", "Skipped to next track successfully. The current track is " + currentPlayerState.getSelectedSongName() + ".");
+
+                    // Add the output to the outputs array
+                    outputs.add(outputNode);
+                }
+            } else if (loadedPodcast) {
+                boolean stopped = currentPodcastState.next(timestamp);
+                if(stopped) {
+                    loadedPodcast = false;
+                    ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                    outputNode.put("command", "next");
+                    outputNode.put("user", username);
+                    outputNode.put("timestamp", timestamp);
+                    outputNode.put("message", "Please load a source before skipping to the next track.");
+
+                    // Add the output to the outputs array
+                    outputs.add(outputNode);
+                } else {
+                    ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                    outputNode.put("command", "next");
+                    outputNode.put("user", username);
+                    outputNode.put("timestamp", timestamp);
+                    outputNode.put("message", "Skipped to next track successfully. The current track is " + currentPodcastState.getSelectedEpisodeName() + ".");
+
+                    // Add the output to the outputs array
+                    outputs.add(outputNode);
+                }
+            } else if (loadedPlaylist) {
+                boolean stopped = currentPlaylistState.next(timestamp);
+                if(stopped) {
+                    loadedPlaylist = false;
+                    ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                    outputNode.put("command", "next");
+                    outputNode.put("user", username);
+                    outputNode.put("timestamp", timestamp);
+                    outputNode.put("message", "Please load a source before skipping to the next track.");
+
+                    // Add the output to the outputs array
+                    outputs.add(outputNode);
+                } else {
+                    ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                    outputNode.put("command", "next");
+                    outputNode.put("user", username);
+                    outputNode.put("timestamp", timestamp);
+                    outputNode.put("message", "Skipped to next track successfully. The current track is " + currentPlaylistState.getSelectedTrackName() + ".");
+
+                    // Add the output to the outputs array
+                    outputs.add(outputNode);
+                }
+            }
+        } else {
+            // Output error message if no source is loaded
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "next");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Please load a source before skipping to the next track.");
+
+            // Add the output to the outputs array
+            outputs.add(outputNode);
+        }
+    }
+
+    public static void handlePrevCommand(LibraryInput library, JsonNode commandNode, ArrayNode outputs) {
+        String username = commandNode.get("username").asText();
+        int timestamp = commandNode.get("timestamp").asInt();
+
+        // Check if a source is loaded
+        if (loadedSong || loadedPodcast || loadedPlaylist) {
+            if (loadedSong) {
+                currentPlayerState.prev(timestamp);
+                ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                outputNode.put("command", "prev");
+                outputNode.put("user", username);
+                outputNode.put("timestamp", timestamp);
+                outputNode.put("message", "Returned to previous track successfully. The current track is " + currentPlayerState.getSelectedSongName() + ".");
+
+                // Add the output to the outputs array
+                outputs.add(outputNode);
+            } else if (loadedPodcast) {
+                currentPodcastState.prev(timestamp);
+                ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                outputNode.put("command", "prev");
+                outputNode.put("user", username);
+                outputNode.put("timestamp", timestamp);
+                outputNode.put("message", "Returned to previous track successfully. The current track is " + currentPodcastState.getSelectedEpisodeName() + ".");
+
+                // Add the output to the outputs array
+                outputs.add(outputNode);
+            } else if (loadedPlaylist) {
+                currentPlaylistState.prev(timestamp);
+                ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                outputNode.put("command", "prev");
+                outputNode.put("user", username);
+                outputNode.put("timestamp", timestamp);
+                outputNode.put("message", "Returned to previous track successfully. The current track is " + currentPlaylistState.getSelectedTrackName() + ".");
+
+                // Add the output to the outputs array
+                outputs.add(outputNode);
+            }
+        } else {
+            // Output error message if no source is loaded
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "prev");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Please load a source before returning to the previous track.");
+
+            // Add the output to the outputs array
+            outputs.add(outputNode);
+        }
+    }
+
+    public static void handleForwardCommand(LibraryInput library, JsonNode commandNode, ArrayNode outputs) {
+        String username = commandNode.get("username").asText();
+        int timestamp = commandNode.get("timestamp").asInt();
+
+        if(loadedSong == false && loadedPodcast == false && loadedPlaylist == false) {
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "forward");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Please load a source before attempting to forward.");
+
+            outputs.add(outputNode);
+            return;
+        }
+        // Check if a source is loaded
+        if (loadedPodcast) {
+            boolean stopped = currentPodcastState.forward(timestamp);
+            if(stopped) {
+                loadedPodcast = false;
+            }
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "forward");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Skipped forward successfully.");
+
+            outputs.add(outputNode);
+        } else {
+            // Output error message if no podcast is loaded
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "forward");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "The loaded source is not a podcast.");
+
+            // Add the output to the outputs array
+            outputs.add(outputNode);
+        }
+    }
+
+    public static void handleBackwardCommand(LibraryInput library, JsonNode commandNode, ArrayNode outputs) {
+        String username = commandNode.get("username").asText();
+        int timestamp = commandNode.get("timestamp").asInt();
+
+        // Check if a source is loaded
+        if (loadedPodcast) {
+            currentPodcastState.backward(timestamp);
+
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "backward");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Rewound successfully.");
+
+            outputs.add(outputNode);
+        } else {
+            // Output error message if no podcast is loaded
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "backward");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "The loaded source is not a podcast.");
+
+            // Add the output to the outputs array
+            outputs.add(outputNode);
+        }
     }
 }

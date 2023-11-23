@@ -38,9 +38,10 @@ public class PlaylistState {
     List<Integer> shuffleOrder;
     int currentShuffleIndex = 0;
     Boolean waitSong = false;
+    private String owner;
 
     // Constructor
-    public PlaylistState(String selectedPlaylistName, boolean isShuffleEnabled, boolean isPaused, String repeatState, int lastTimestamp, int initialTimestamp, List<SongInput> tracks) {
+    public PlaylistState(String selectedPlaylistName, boolean isShuffleEnabled, boolean isPaused, String repeatState, int lastTimestamp, int initialTimestamp, List<SongInput> tracks, String owner) {
         this.selectedPlaylistName = selectedPlaylistName;
         this.isShuffleEnabled = isShuffleEnabled;
         this.isPaused = isPaused;
@@ -48,6 +49,7 @@ public class PlaylistState {
         this.lastTimestamp = lastTimestamp;
         this.initialTimestamp = initialTimestamp;
         this.tracks = tracks;
+        this.owner = owner;
         updateCurrentTrackInfo();
     }
     public int getCurrentTrackIndex() {
@@ -61,6 +63,9 @@ public class PlaylistState {
         return tracks;
     }
 
+    public String getOwner() {
+        return owner;
+    }
     // Setters
     public void setSelectedPlaylistName(String selectedPlaylistName) {
         this.selectedPlaylistName = selectedPlaylistName;
@@ -186,6 +191,69 @@ public class PlaylistState {
     public void reset() {
         currentTrackIndex = 0;
         isShuffleEnabled = false;
+        updateCurrentTrackInfo();
+    }
+    public boolean next(int timestamp) {
+        lastTimestamp = timestamp;
+        initialTimestamp = timestamp;
+        if(isShuffleEnabled) {
+            currentShuffleIndex++;
+            if (repeatState.equals("Repeat Current Song")) {
+                currentShuffleIndex--;
+                currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
+            }
+            if (currentShuffleIndex >= tracks.size()) {
+                if(repeatState.equals("Repeat All")) {
+                    currentShuffleIndex = 0;
+                    currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
+                } else {
+                    currentTrackIndex = 0;
+                    isShuffleEnabled = false;
+                    isPaused = true;
+                    return true;
+                }
+            }
+            updateCurrentTrackInfo();
+        } else {
+            currentTrackIndex++;
+            if (repeatState.equals("Repeat Current Song")) {
+                currentTrackIndex--;
+            }
+            if (currentTrackIndex >= tracks.size()) {
+                if(repeatState.equals("Repeat All")) {
+                    currentTrackIndex = 0;
+                } else {
+                    currentTrackIndex = 0;
+                    isPaused = true;
+                    return true;
+                }
+            }
+            updateCurrentTrackInfo();
+        }
+        return false;
+    }
+
+    public void prev(int timestamp) {
+        lastTimestamp = timestamp;
+        calculateTimeRemaining();
+        if(timeRemaining == duration) {
+            if(isShuffleEnabled) {
+                currentShuffleIndex--;
+                if(currentShuffleIndex < 0) {
+                    currentShuffleIndex = 0;
+                    currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
+                }
+            } else {
+                currentTrackIndex--;
+                if(currentTrackIndex < 0) {
+                    currentTrackIndex = 0;
+                }
+            }
+        }
+        initialTimestamp = timestamp;
+        if(isPaused == true) {
+            isPaused = false;
+        }
         updateCurrentTrackInfo();
     }
 }

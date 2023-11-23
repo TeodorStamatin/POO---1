@@ -4733,12 +4733,17 @@
     "paused" : true
   }
 }, {
+  "command" : "next",
+  "user" : "henry26",
+  "timestamp" : 5570,
+  "message" : "Skipped to next track successfully. The current track is Shape of You."
+}, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 5570,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -4749,7 +4754,7 @@
   "timestamp" : 5580,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -4760,7 +4765,7 @@
   "timestamp" : 5580,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -4771,7 +4776,7 @@
   "timestamp" : 5590,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -4782,32 +4787,47 @@
   "timestamp" : 5590,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "next",
+  "user" : "alice22",
+  "timestamp" : 5600,
+  "message" : "Skipped to next track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 5600,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "prev",
+  "user" : "bob35",
+  "timestamp" : 5610,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
+}, {
+  "command" : "prev",
+  "user" : "bob35",
+  "timestamp" : 5610,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 5610,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "like",
@@ -4820,32 +4840,42 @@
   "timestamp" : 5620,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 223,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "david27",
+  "timestamp" : 5630,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 5630,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 5640,
+  "message" : "Skipped to next track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 5640,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -4858,21 +4888,26 @@
   "timestamp" : 5650,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 223,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "grace25",
+  "timestamp" : 5660,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 5660,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 233,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -4885,10 +4920,10 @@
   "timestamp" : 5670,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 223,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -4901,10 +4936,10 @@
   "timestamp" : 5680,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 213,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
@@ -4912,10 +4947,10 @@
   "timestamp" : 5690,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 203,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
@@ -4923,53 +4958,58 @@
   "timestamp" : 5690,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 205,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "playPause",
-  "user" : "alice22",
-  "timestamp" : 5700,
-  "message" : "Playback resumed successfully."
-}, {
-  "command" : "status",
-  "user" : "alice22",
-  "timestamp" : 5700,
-  "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 205,
+    "remainedTime" : 203,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "playPause",
+  "user" : "alice22",
+  "timestamp" : 5700,
+  "message" : "Playback paused successfully."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 5700,
+  "stats" : {
+    "name" : "Shape of You",
+    "remainedTime" : 193,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "playPause",
   "user" : "bob35",
   "timestamp" : 5710,
-  "message" : "Playback paused successfully."
+  "message" : "Playback resumed successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 5710,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 195,
+    "remainedTime" : 193,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "carol19",
+  "timestamp" : 5720,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 5720,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 195,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "like",
@@ -4982,21 +5022,31 @@
   "timestamp" : 5730,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 195,
+    "remainedTime" : 223,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 5740,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
+}, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 5740,
+  "message" : "Returned to previous track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 5740,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 195,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -5009,10 +5059,10 @@
   "timestamp" : 5750,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 195,
+    "remainedTime" : 223,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
@@ -5020,10 +5070,10 @@
   "timestamp" : 5760,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 195,
+    "remainedTime" : 213,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
@@ -5031,37 +5081,42 @@
   "timestamp" : 5760,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 195,
+    "remainedTime" : 213,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "henry26",
+  "timestamp" : 5770,
+  "message" : "Skipped to next track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 5770,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 195,
+    "remainedTime" : 233,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "playPause",
   "user" : "irene33",
   "timestamp" : 5780,
-  "message" : "Playback resumed successfully."
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 5780,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 195,
+    "remainedTime" : 223,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "repeat",
@@ -5074,21 +5129,26 @@
   "timestamp" : 5790,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 185,
+    "remainedTime" : 223,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
+}, {
+  "command" : "next",
+  "user" : "alice22",
+  "timestamp" : 5800,
+  "message" : "Skipped to next track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 5800,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 175,
+    "remainedTime" : 233,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "like",
@@ -5101,21 +5161,26 @@
   "timestamp" : 5810,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 165,
+    "remainedTime" : 233,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
+}, {
+  "command" : "next",
+  "user" : "carol19",
+  "timestamp" : 5820,
+  "message" : "Skipped to next track successfully. The current track is Shape of You."
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 5820,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 155,
+    "remainedTime" : 233,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "status",
@@ -5123,10 +5188,10 @@
   "timestamp" : 5830,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 145,
+    "remainedTime" : 233,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "status",
@@ -5134,10 +5199,10 @@
   "timestamp" : 5830,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 145,
+    "remainedTime" : 233,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "repeat",
@@ -5150,10 +5215,10 @@
   "timestamp" : 5840,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 135,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "like",
@@ -5166,21 +5231,26 @@
   "timestamp" : 5850,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 125,
+    "remainedTime" : 233,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
+}, {
+  "command" : "next",
+  "user" : "grace25",
+  "timestamp" : 5860,
+  "message" : "Skipped to next track successfully. The current track is Start Me Up."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 5860,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 115,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "shuffle",
@@ -5192,11 +5262,11 @@
   "user" : "henry26",
   "timestamp" : 5870,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 105,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "like",
@@ -5208,19 +5278,24 @@
   "user" : "irene33",
   "timestamp" : 5880,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 95,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
+}, {
+  "command" : "prev",
+  "user" : "jack29",
+  "timestamp" : 5890,
+  "message" : "Returned to previous track successfully. The current track is Start Me Up."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 5890,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 85,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5235,19 +5310,24 @@
   "user" : "alice22",
   "timestamp" : 5900,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 75,
+    "name" : "Start Me Up",
+    "remainedTime" : 202,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "bob35",
+  "timestamp" : 5910,
+  "message" : "Returned to previous track successfully. The current track is Start Me Up."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 5910,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 65,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5257,8 +5337,8 @@
   "user" : "carol19",
   "timestamp" : 5920,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 55,
+    "name" : "Start Me Up",
+    "remainedTime" : 202,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5268,30 +5348,45 @@
   "user" : "carol19",
   "timestamp" : 5920,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 55,
+    "name" : "Start Me Up",
+    "remainedTime" : 202,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "david27",
+  "timestamp" : 5930,
+  "message" : "Returned to previous track successfully. The current track is Start Me Up."
+}, {
+  "command" : "prev",
+  "user" : "david27",
+  "timestamp" : 5930,
+  "message" : "Returned to previous track successfully. The current track is Start Me Up."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 5930,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 45,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 5940,
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 5940,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 35,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5301,8 +5396,8 @@
   "user" : "frank21",
   "timestamp" : 5950,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 25,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5312,8 +5407,8 @@
   "user" : "frank21",
   "timestamp" : 5950,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 25,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5322,14 +5417,14 @@
   "command" : "like",
   "user" : "grace25",
   "timestamp" : 5960,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 5960,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 15,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5344,8 +5439,8 @@
   "user" : "henry26",
   "timestamp" : 5970,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 5,
+    "name" : "Money Trees",
+    "remainedTime" : 357,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5360,8 +5455,8 @@
   "user" : "irene33",
   "timestamp" : 5980,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 227,
+    "name" : "Money Trees",
+    "remainedTime" : 347,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5376,8 +5471,8 @@
   "user" : "jack29",
   "timestamp" : 5990,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 217,
+    "name" : "Money Trees",
+    "remainedTime" : 337,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5392,8 +5487,8 @@
   "user" : "alice22",
   "timestamp" : 6000,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 207,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5408,8 +5503,8 @@
   "user" : "bob35",
   "timestamp" : 6010,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 197,
+    "name" : "Money Trees",
+    "remainedTime" : 317,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5424,19 +5519,24 @@
   "user" : "carol19",
   "timestamp" : 6020,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 187,
+    "name" : "Money Trees",
+    "remainedTime" : 307,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "david27",
+  "timestamp" : 6030,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 6030,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 177,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5451,8 +5551,8 @@
   "user" : "emily30",
   "timestamp" : 6040,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 167,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5462,8 +5562,8 @@
   "user" : "frank21",
   "timestamp" : 6050,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 157,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5473,8 +5573,8 @@
   "user" : "frank21",
   "timestamp" : 6050,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 157,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5489,8 +5589,8 @@
   "user" : "grace25",
   "timestamp" : 6060,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 147,
+    "name" : "Money Trees",
+    "remainedTime" : 357,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5500,8 +5600,8 @@
   "user" : "henry26",
   "timestamp" : 6070,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 137,
+    "name" : "Money Trees",
+    "remainedTime" : 347,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5511,8 +5611,8 @@
   "user" : "henry26",
   "timestamp" : 6070,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 137,
+    "name" : "Money Trees",
+    "remainedTime" : 347,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5527,8 +5627,8 @@
   "user" : "irene33",
   "timestamp" : 6080,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 127,
+    "name" : "Money Trees",
+    "remainedTime" : 337,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : true
@@ -5543,8 +5643,8 @@
   "user" : "jack29",
   "timestamp" : 6090,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 127,
+    "name" : "Money Trees",
+    "remainedTime" : 337,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5559,8 +5659,8 @@
   "user" : "alice22",
   "timestamp" : 6100,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : true
@@ -5575,8 +5675,8 @@
   "user" : "bob35",
   "timestamp" : 6110,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : true
@@ -5591,8 +5691,8 @@
   "user" : "carol19",
   "timestamp" : 6120,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : true
@@ -5607,22 +5707,27 @@
   "user" : "david27",
   "timestamp" : 6130,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 327,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 6140,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6140,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "like",
@@ -5634,76 +5739,91 @@
   "user" : "frank21",
   "timestamp" : 6150,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "like",
   "user" : "grace25",
   "timestamp" : 6160,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 6160,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "henry26",
+  "timestamp" : 6170,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 6170,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "irene33",
+  "timestamp" : 6180,
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6180,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "playPause",
   "user" : "jack29",
   "timestamp" : 6190,
-  "message" : "Playback resumed successfully."
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 6190,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 117,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
+}, {
+  "command" : "next",
+  "user" : "alice22",
+  "timestamp" : 6200,
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 6200,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 107,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "like",
@@ -5715,11 +5835,11 @@
   "user" : "bob35",
   "timestamp" : 6210,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 97,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "repeat",
@@ -5731,11 +5851,11 @@
   "user" : "carol19",
   "timestamp" : 6220,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 87,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "like",
@@ -5747,19 +5867,29 @@
   "user" : "david27",
   "timestamp" : 6230,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 77,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
+}, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 6240,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
+}, {
+  "command" : "prev",
+  "user" : "emily30",
+  "timestamp" : 6240,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6240,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 67,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5774,8 +5904,8 @@
   "user" : "frank21",
   "timestamp" : 6250,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 57,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5790,41 +5920,61 @@
   "user" : "grace25",
   "timestamp" : 6260,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 47,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "henry26",
+  "timestamp" : 6270,
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 6270,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 37,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "irene33",
+  "timestamp" : 6280,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
+}, {
+  "command" : "prev",
+  "user" : "irene33",
+  "timestamp" : 6280,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6280,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 27,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "jack29",
+  "timestamp" : 6290,
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 6290,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 17,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -5839,19 +5989,24 @@
   "user" : "alice22",
   "timestamp" : 6300,
   "stats" : {
-    "name" : "Delicate",
-    "remainedTime" : 7,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "bob35",
+  "timestamp" : 6310,
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 6310,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 230,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -5866,8 +6021,8 @@
   "user" : "carol19",
   "timestamp" : 6320,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 220,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -5877,8 +6032,8 @@
   "user" : "david27",
   "timestamp" : 6330,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 210,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -5888,19 +6043,24 @@
   "user" : "david27",
   "timestamp" : 6330,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 210,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 6340,
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6340,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 200,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -5915,8 +6075,8 @@
   "user" : "frank21",
   "timestamp" : 6350,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 190,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -5931,8 +6091,8 @@
   "user" : "grace25",
   "timestamp" : 6360,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 180,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -5942,8 +6102,8 @@
   "user" : "henry26",
   "timestamp" : 6370,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 180,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -5953,8 +6113,8 @@
   "user" : "henry26",
   "timestamp" : 6370,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 180,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -5963,28 +6123,38 @@
   "command" : "like",
   "user" : "irene33",
   "timestamp" : 6380,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6380,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 180,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "prev",
+  "user" : "jack29",
+  "timestamp" : 6390,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
+}, {
+  "command" : "prev",
+  "user" : "jack29",
+  "timestamp" : 6390,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 6390,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 180,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "shuffle",
@@ -5996,92 +6166,107 @@
   "user" : "alice22",
   "timestamp" : 6400,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 180,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "bob35",
+  "timestamp" : 6410,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 6410,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 180,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "playPause",
-  "user" : "carol19",
-  "timestamp" : 6420,
-  "message" : "Playback resumed successfully."
-}, {
-  "command" : "status",
-  "user" : "carol19",
-  "timestamp" : 6420,
-  "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 180,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "playPause",
+  "user" : "carol19",
+  "timestamp" : 6420,
+  "message" : "Playback paused successfully."
+}, {
+  "command" : "status",
+  "user" : "carol19",
+  "timestamp" : 6420,
+  "stats" : {
+    "name" : "Money Trees",
+    "remainedTime" : 377,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "playPause",
   "user" : "david27",
   "timestamp" : 6430,
-  "message" : "Playback paused successfully."
+  "message" : "Playback resumed successfully."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 6430,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 6440,
+  "message" : "Skipped to next track successfully. The current track is Start Me Up."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6440,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "like",
   "user" : "frank21",
   "timestamp" : 6450,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "frank21",
   "timestamp" : 6450,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Start Me Up",
+    "remainedTime" : 202,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "grace25",
+  "timestamp" : 6460,
+  "message" : "Returned to previous track successfully. The current track is Start Me Up."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 6460,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Start Me Up",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "shuffle",
@@ -6093,22 +6278,27 @@
   "user" : "henry26",
   "timestamp" : 6470,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Start Me Up",
+    "remainedTime" : 202,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "irene33",
+  "timestamp" : 6480,
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6480,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "shuffle",
@@ -6120,11 +6310,11 @@
   "user" : "jack29",
   "timestamp" : 6490,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -6136,38 +6326,48 @@
   "user" : "alice22",
   "timestamp" : 6500,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 212,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "like",
   "user" : "bob35",
   "timestamp" : 6510,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 6510,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 202,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "carol19",
+  "timestamp" : 6520,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
+}, {
+  "command" : "prev",
+  "user" : "carol19",
+  "timestamp" : 6520,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 6520,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -6179,11 +6379,11 @@
   "user" : "david27",
   "timestamp" : 6530,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -6195,44 +6395,49 @@
   "user" : "emily30",
   "timestamp" : 6540,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "frank21",
+  "timestamp" : 6550,
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "frank21",
   "timestamp" : 6550,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 6560,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 6560,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -6244,11 +6449,11 @@
   "user" : "henry26",
   "timestamp" : 6570,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 212,
     "repeat" : "No Repeat",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -6260,22 +6465,27 @@
   "user" : "irene33",
   "timestamp" : 6580,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 202,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "jack29",
+  "timestamp" : 6590,
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 6590,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "like",
@@ -6287,49 +6497,49 @@
   "user" : "alice22",
   "timestamp" : 6600,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "like",
   "user" : "bob35",
   "timestamp" : 6610,
-  "message" : "Like registered successfully."
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 6610,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 212,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 6620,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 202,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 6620,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 202,
     "repeat" : "Repeat All",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
@@ -6341,11 +6551,11 @@
   "user" : "david27",
   "timestamp" : 6630,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 192,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "shuffle",
@@ -6357,11 +6567,11 @@
   "user" : "emily30",
   "timestamp" : 6640,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
+    "name" : "Delicate",
+    "remainedTime" : 182,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "shuffle",
@@ -6373,75 +6583,75 @@
   "user" : "frank21",
   "timestamp" : 6650,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : true
-  }
-}, {
-  "command" : "playPause",
-  "user" : "grace25",
-  "timestamp" : 6660,
-  "message" : "Playback resumed successfully."
-}, {
-  "command" : "status",
-  "user" : "grace25",
-  "timestamp" : 6660,
-  "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 170,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : false
-  }
-}, {
-  "command" : "shuffle",
-  "user" : "henry26",
-  "timestamp" : 6670,
-  "message" : "Shuffle function activated successfully."
-}, {
-  "command" : "status",
-  "user" : "henry26",
-  "timestamp" : 6670,
-  "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 160,
-    "repeat" : "Repeat Current Song",
-    "shuffle" : true,
-    "paused" : false
-  }
-}, {
-  "command" : "shuffle",
-  "user" : "irene33",
-  "timestamp" : 6680,
-  "message" : "Shuffle function activated successfully."
-}, {
-  "command" : "status",
-  "user" : "irene33",
-  "timestamp" : 6680,
-  "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 150,
+    "name" : "Delicate",
+    "remainedTime" : 172,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "playPause",
-  "user" : "jack29",
-  "timestamp" : 6690,
+  "user" : "grace25",
+  "timestamp" : 6660,
   "message" : "Playback paused successfully."
 }, {
   "command" : "status",
-  "user" : "jack29",
-  "timestamp" : 6690,
+  "user" : "grace25",
+  "timestamp" : 6660,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 140,
+    "name" : "Delicate",
+    "remainedTime" : 162,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
+  }
+}, {
+  "command" : "shuffle",
+  "user" : "henry26",
+  "timestamp" : 6670,
+  "message" : "Shuffle function activated successfully."
+}, {
+  "command" : "status",
+  "user" : "henry26",
+  "timestamp" : 6670,
+  "stats" : {
+    "name" : "Delicate",
+    "remainedTime" : 162,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "shuffle",
+  "user" : "irene33",
+  "timestamp" : 6680,
+  "message" : "Shuffle function activated successfully."
+}, {
+  "command" : "status",
+  "user" : "irene33",
+  "timestamp" : 6680,
+  "stats" : {
+    "name" : "Delicate",
+    "remainedTime" : 162,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : true
+  }
+}, {
+  "command" : "playPause",
+  "user" : "jack29",
+  "timestamp" : 6690,
+  "message" : "Playback resumed successfully."
+}, {
+  "command" : "status",
+  "user" : "jack29",
+  "timestamp" : 6690,
+  "stats" : {
+    "name" : "Delicate",
+    "remainedTime" : 162,
+    "repeat" : "Repeat Current Song",
+    "shuffle" : true,
+    "paused" : false
   }
 }, {
   "command" : "shuffle",
@@ -6453,35 +6663,45 @@
   "user" : "alice22",
   "timestamp" : 6700,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 140,
+    "name" : "Delicate",
+    "remainedTime" : 152,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "playPause",
   "user" : "bob35",
   "timestamp" : 6710,
-  "message" : "Playback resumed successfully."
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 6710,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 140,
+    "name" : "Delicate",
+    "remainedTime" : 142,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
-    "paused" : false
+    "paused" : true
   }
+}, {
+  "command" : "prev",
+  "user" : "carol19",
+  "timestamp" : 6720,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
+}, {
+  "command" : "prev",
+  "user" : "carol19",
+  "timestamp" : 6720,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 6720,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 130,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6490,91 +6710,141 @@
   "command" : "like",
   "user" : "david27",
   "timestamp" : 6730,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 6730,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 120,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 6740,
+  "message" : "Skipped to next track successfully. The current track is Begin Again."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6740,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 110,
+    "name" : "Begin Again",
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "frank21",
+  "timestamp" : 6750,
+  "message" : "Returned to previous track successfully. The current track is Begin Again."
 }, {
   "command" : "status",
   "user" : "frank21",
   "timestamp" : 6750,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 100,
+    "name" : "Begin Again",
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "grace25",
+  "timestamp" : 6760,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 6760,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 90,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "henry26",
+  "timestamp" : 6770,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
+}, {
+  "command" : "prev",
+  "user" : "henry26",
+  "timestamp" : 6770,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 6770,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 80,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "next",
+  "user" : "irene33",
+  "timestamp" : 6780,
+  "message" : "Skipped to next track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 6780,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 70,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "jack29",
+  "timestamp" : 6790,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
+}, {
+  "command" : "prev",
+  "user" : "jack29",
+  "timestamp" : 6790,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 6790,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 60,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "alice22",
+  "timestamp" : 6800,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
+}, {
+  "command" : "prev",
+  "user" : "alice22",
+  "timestamp" : 6800,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 6800,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 50,
+    "name" : "Delicate",
+    "remainedTime" : 232,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6584,8 +6854,8 @@
   "user" : "bob35",
   "timestamp" : 6810,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 40,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6595,8 +6865,8 @@
   "user" : "bob35",
   "timestamp" : 6810,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 40,
+    "name" : "Delicate",
+    "remainedTime" : 222,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6611,30 +6881,45 @@
   "user" : "carol19",
   "timestamp" : 6820,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 30,
+    "name" : "Delicate",
+    "remainedTime" : 212,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "prev",
+  "user" : "david27",
+  "timestamp" : 6830,
+  "message" : "Returned to previous track successfully. The current track is Delicate."
+}, {
+  "command" : "prev",
+  "user" : "david27",
+  "timestamp" : 6830,
+  "message" : "Returned to previous track successfully. The current track is Money Trees."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 6830,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 20,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
   }
 }, {
+  "command" : "next",
+  "user" : "emily30",
+  "timestamp" : 6840,
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
+}, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6840,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 10,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : false
@@ -6649,8 +6934,8 @@
   "user" : "frank21",
   "timestamp" : 6850,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 238,
+    "name" : "Money Trees",
+    "remainedTime" : 377,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -6660,8 +6945,8 @@
   "user" : "grace25",
   "timestamp" : 6860,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 228,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -6671,8 +6956,8 @@
   "user" : "grace25",
   "timestamp" : 6860,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 228,
+    "name" : "Money Trees",
+    "remainedTime" : 367,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -6687,8 +6972,8 @@
   "user" : "henry26",
   "timestamp" : 6870,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 218,
+    "name" : "Money Trees",
+    "remainedTime" : 357,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -6703,8 +6988,8 @@
   "user" : "irene33",
   "timestamp" : 6880,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 208,
+    "name" : "Money Trees",
+    "remainedTime" : 347,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : false
@@ -6719,19 +7004,24 @@
   "user" : "jack29",
   "timestamp" : 6890,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 198,
+    "name" : "Money Trees",
+    "remainedTime" : 337,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : true
   }
 }, {
+  "command" : "next",
+  "user" : "alice22",
+  "timestamp" : 6900,
+  "message" : "Skipped to next track successfully. The current track is Money Trees."
+}, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 6900,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 198,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat All",
     "shuffle" : true,
     "paused" : true
@@ -6746,8 +7036,8 @@
   "user" : "bob35",
   "timestamp" : 6910,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 198,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6757,8 +7047,8 @@
   "user" : "carol19",
   "timestamp" : 6920,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 198,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6768,19 +7058,24 @@
   "user" : "carol19",
   "timestamp" : 6920,
   "stats" : {
-    "name" : "Begin Again",
-    "remainedTime" : 198,
+    "name" : "Money Trees",
+    "remainedTime" : 387,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "next",
+  "user" : "david27",
+  "timestamp" : 6930,
+  "message" : "Skipped to next track successfully. The current track is Begin Again."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 6930,
   "stats" : {
     "name" : "Begin Again",
-    "remainedTime" : 198,
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6796,7 +7091,7 @@
   "timestamp" : 6940,
   "stats" : {
     "name" : "Begin Again",
-    "remainedTime" : 198,
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6807,7 +7102,7 @@
   "timestamp" : 6950,
   "stats" : {
     "name" : "Begin Again",
-    "remainedTime" : 198,
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6818,7 +7113,7 @@
   "timestamp" : 6950,
   "stats" : {
     "name" : "Begin Again",
-    "remainedTime" : 198,
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6834,7 +7129,7 @@
   "timestamp" : 6960,
   "stats" : {
     "name" : "Begin Again",
-    "remainedTime" : 198,
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6843,14 +7138,14 @@
   "command" : "like",
   "user" : "henry26",
   "timestamp" : 6970,
-  "message" : "Unlike registered successfully."
+  "message" : "Like registered successfully."
 }, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 6970,
   "stats" : {
     "name" : "Begin Again",
-    "remainedTime" : 198,
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6866,7 +7161,7 @@
   "timestamp" : 6980,
   "stats" : {
     "name" : "Begin Again",
-    "remainedTime" : 198,
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -6882,7 +7177,7 @@
   "timestamp" : 6990,
   "stats" : {
     "name" : "Begin Again",
-    "remainedTime" : 198,
+    "remainedTime" : 238,
     "repeat" : "Repeat Current Song",
     "shuffle" : true,
     "paused" : true
@@ -8556,7 +8851,7 @@
   "command" : "showPreferredSongs",
   "user" : "alice22",
   "timestamp" : 8490,
-  "result" : [ "Shape of You" ]
+  "result" : [ "Delicate" ]
 }, {
   "command" : "showPlaylists",
   "user" : "bob35",
@@ -8576,7 +8871,7 @@
   "command" : "showPreferredSongs",
   "user" : "bob35",
   "timestamp" : 8500,
-  "result" : [ "Delicate", "Shape of You" ]
+  "result" : [ "Shape of You", "Money Trees" ]
 }, {
   "command" : "showPlaylists",
   "user" : "carol19",
@@ -8596,7 +8891,7 @@
   "command" : "showPreferredSongs",
   "user" : "carol19",
   "timestamp" : 8510,
-  "result" : [ "Shape of You", "Delicate" ]
+  "result" : [ "Shape of You", "Money Trees" ]
 }, {
   "command" : "showPlaylists",
   "user" : "david27",
@@ -8616,7 +8911,7 @@
   "command" : "showPreferredSongs",
   "user" : "david27",
   "timestamp" : 8520,
-  "result" : [ "Delicate" ]
+  "result" : [ "Shape of You", "Money Trees", "Delicate" ]
 }, {
   "command" : "showPlaylists",
   "user" : "emily30",
@@ -8636,7 +8931,7 @@
   "command" : "showPreferredSongs",
   "user" : "emily30",
   "timestamp" : 8530,
-  "result" : [ "Delicate", "Begin Again" ]
+  "result" : [ "Money Trees", "Begin Again" ]
 }, {
   "command" : "showPlaylists",
   "user" : "frank21",
@@ -8656,7 +8951,7 @@
   "command" : "showPreferredSongs",
   "user" : "frank21",
   "timestamp" : 8540,
-  "result" : [ ]
+  "result" : [ "Shape of You", "Start Me Up" ]
 }, {
   "command" : "showPlaylists",
   "user" : "grace25",
@@ -8676,7 +8971,7 @@
   "command" : "showPreferredSongs",
   "user" : "grace25",
   "timestamp" : 8550,
-  "result" : [ "Delicate" ]
+  "result" : [ "Shape of You" ]
 }, {
   "command" : "showPlaylists",
   "user" : "henry26",
@@ -8696,7 +8991,7 @@
   "command" : "showPreferredSongs",
   "user" : "henry26",
   "timestamp" : 8560,
-  "result" : [ ]
+  "result" : [ "Money Trees", "Begin Again" ]
 }, {
   "command" : "showPlaylists",
   "user" : "irene33",
@@ -8716,7 +9011,7 @@
   "command" : "showPreferredSongs",
   "user" : "irene33",
   "timestamp" : 8570,
-  "result" : [ ]
+  "result" : [ "Start Me Up", "Money Trees" ]
 }, {
   "command" : "showPlaylists",
   "user" : "jack29",

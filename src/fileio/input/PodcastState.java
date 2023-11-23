@@ -109,4 +109,54 @@ public class PodcastState {
     public String getSelectedEpisodeName() {
         return episodes.get(currentEpisodeIndex).getName();
     }
+
+    public boolean next(int timestamp) {
+        initialTimestamp = timestamp;
+        lastTimestamp = timestamp;
+        currentEpisodeIndex++;
+        if (repeatState.equals("Repeat Once")) {
+            currentEpisodeIndex--;
+            repeatState = "No Repeat";
+        }
+        if (currentEpisodeIndex >= episodes.size()) {
+            if(repeatState.equals("No Repeat")) {
+                currentEpisodeIndex = 0;
+                return true;
+            } else if (repeatState.equals("Repeat Infinite")) {
+                currentEpisodeIndex = 0;
+            }
+        }
+        updateCurrentEpisodeInfo();
+        return false;
+    }
+
+    public void prev(int timestamp) {
+        initialTimestamp = timestamp;
+        lastTimestamp = timestamp;
+        if(isPaused == true) {
+            isPaused = false;
+        }
+        updateCurrentEpisodeInfo();
+    }
+
+    public boolean forward(int timestamp) {
+        lastTimestamp = timestamp;
+        calculateTimeRemaining();
+        if(timeRemaining > 90) {
+            timeRemaining += 90;
+            return false;
+        } else {
+            return next(timestamp);
+        }
+    }
+
+    public void backward(int timestamp) {
+        lastTimestamp = timestamp;
+        calculateTimeRemaining();
+        if(episodes.get(currentEpisodeIndex).getDuration() - timeRemaining > 90) {
+            timeRemaining -= 90;
+        } else {
+            prev(timestamp);
+        }
+    }
 }

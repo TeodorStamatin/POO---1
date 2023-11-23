@@ -106,4 +106,27 @@ public class PlayerState {
             return Math.max(0, timeRemaining - elapsedTime);
         }
     }
+
+    public boolean next(int timestamp) {
+        initialTimestamp = timestamp;
+        lastTimestamp = timestamp;
+        if(repeatState.equals("No Repeat")) {
+            return true;
+        } else if(repeatState.equals("Repeat Infinite")) {
+
+        } else if(repeatState.equals("Repeat Once")) {
+            repeatState = "No Repeat";
+        }
+        updateCurrentSongDuration();
+        return false;
+    }
+
+    public void prev(int timestamp) {
+        initialTimestamp = timestamp;
+        lastTimestamp = timestamp;
+        if(isPaused == true) {
+            isPaused = false;
+        }
+        updateCurrentSongDuration();
+    }
 }

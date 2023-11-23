@@ -59,8 +59,8 @@ public class UserInformation {
 
     //getter for a certain playlist songs
 
-    public void createPlaylist(String playlistName, int visibilityStatus) {
-        Playlist playlist = new Playlist(playlistName, visibilityStatus);
+    public void createPlaylist(String playlistName, int visibilityStatus, String owner) {
+        Playlist playlist = new Playlist(playlistName, visibilityStatus, owner);
         playlists.add(playlist);
     }
 

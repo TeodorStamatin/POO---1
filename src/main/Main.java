@@ -139,6 +139,17 @@ public final class Main {
                 case "showPlaylists":
                     Command.handleShowPlaylistsCommand(library, userInformationList, commandNode, outputs);
                     break;
+                case "next":
+                    Command.handleNextCommand(library, commandNode, outputs);
+                    break;
+                case "prev":
+                    Command.handlePrevCommand(library, commandNode, outputs);
+                    break;
+                case "forward":
+                    Command.handleForwardCommand(library, commandNode, outputs);
+                    break;
+                case "backward":
+                    Command.handleBackwardCommand(library, commandNode, outputs);
             }
         }
 
