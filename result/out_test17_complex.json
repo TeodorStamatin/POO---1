@@ -9907,4 +9907,14 @@
   "user" : "jack29",
   "timestamp" : 8580,
   "result" : [ ]
+}, {
+  "command" : "getTop5Playlists",
+  "user" : "null",
+  "timestamp" : 8580,
+  "result" : [ "Chill Sounds Voyage #1", "Vibey Bangers Safari #1", "Groovy Grooves Dream #1", "Stellar Tunes Quest #2", "Chill Sounds Adventure #2" ]
+}, {
+  "command" : "getTop5Playlists",
+  "user" : "null",
+  "timestamp" : 8580,
+  "result" : [ "Money Trees", "Shape of You", "Begin Again", "Delicate", "Start Me Up" ]
 } ]

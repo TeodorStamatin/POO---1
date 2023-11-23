@@ -5,17 +5,13 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import java.util.*;
+import java.util.Map.Entry;
+import java.util.Map;
+import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.lang.management.PlatformLoggingMXBean;
 import java.util.List;
-import fileio.input.PlayerState;
-import fileio.input.LibraryInput;
-import fileio.input.SearchHelper;
-import fileio.input.UserInput;
-import fileio.input.SongInput;
-import fileio.input.EpisodeInput;
-import fileio.input.PodcastInput;
 public class Command {
 
     private static List<String> lastSearchResults;
@@ -662,7 +658,7 @@ public class Command {
             boolean playlistExists = user.playlistExists(playlistName);
 
             if (!playlistExists) {
-                user.createPlaylist(playlistName, 1, username);
+                user.createPlaylist(playlistName, 1, username, timestamp);
 
                 ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
                 outputNode.put("command", "createPlaylist");
@@ -1254,4 +1250,95 @@ public class Command {
         }
     }
 
+    public static void handleGetTop5PlaylistsCommand(LibraryInput library, List<UserInformation> userInformationList, JsonNode commandNode, ArrayNode outputs) {
+
+        int timestamp = commandNode.get("timestamp").asInt();
+        String username = "null";
+
+        Map<String, Integer> playlistFollowers = new HashMap<>();
+
+        for(UserInformation user : userInformationList) {
+            List<Playlist> playlists = user.getPlaylists();
+            for(Playlist playlist : playlists) {
+                if(playlistFollowers.containsKey(playlist.getName())) {
+                    playlistFollowers.put(playlist.getName(), playlistFollowers.get(playlist.getName()) + playlist.getFollowers());
+                } else {
+                    playlistFollowers.put(playlist.getName(), playlist.getFollowers());
+                }
+            }
+        }
+
+        List<Entry<String, Integer>> sortedPlaylists = new ArrayList<>(playlistFollowers.entrySet());
+        sortedPlaylists.sort((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()));
+
+        List<String> top5Playlists = new ArrayList<>();
+        int count = 0;
+        for (Entry<String, Integer> entry : sortedPlaylists) {
+            if (count < 5) {
+                top5Playlists.add(entry.getKey());
+                count++;
+            } else {
+                break;
+            }
+        }
+
+        ArrayNode results = JsonNodeFactory.instance.arrayNode();
+        for(String item : top5Playlists) {
+            results.add(item);
+        }
+
+        ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+        outputNode.put("command", "getTop5Playlists");
+        outputNode.put("user", "null");
+        outputNode.put("timestamp", timestamp);
+        outputNode.set("result", results);
+
+        // Add the output to the outputs array
+        outputs.add(outputNode);
+    }
+
+    public static void handleGetTop5SongsCommand(LibraryInput library, List<UserInformation> userInformationList, JsonNode commandNode, ArrayNode outputs) {
+        int timestamp = commandNode.get("timestamp").asInt();
+
+        Map<String, Integer> songFrequencies = new HashMap<>();
+
+        for(UserInformation user : userInformationList) {
+            List<String> likedSongs = user.getLikedSongs();
+            for(String songName : likedSongs) {
+                if(songFrequencies.containsKey(songName)) {
+                    songFrequencies.put(songName, songFrequencies.get(songName) + 1);
+                } else {
+                    songFrequencies.put(songName, 1);
+                }
+            }
+        }
+
+        List<Entry<String, Integer>> sortedEntries = new ArrayList<>(songFrequencies.entrySet());
+        sortedEntries.sort((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()));
+
+        List<String> top5Songs = new ArrayList<>();
+        int count = 0;
+        for (Entry<String, Integer> entry : sortedEntries) {
+            if (count < 5) {
+                top5Songs.add(entry.getKey());
+                count++;
+            } else {
+                break;
+            }
+        }
+
+        ArrayNode results = JsonNodeFactory.instance.arrayNode();
+        for (String item : top5Songs) {
+            results.add(item);
+        }
+
+        ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+        outputNode.put("command", "getTop5Playlists");
+        outputNode.put("user", "null");
+        outputNode.put("timestamp", timestamp);
+        outputNode.set("result", results);
+
+        // Add the output to the outputs array
+        outputs.add(outputNode);
+    }
 }

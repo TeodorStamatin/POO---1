@@ -158,10 +158,10 @@ public final class Main {
                     Command.handleSwitchVisibilityCommand(library, userInformationList, commandNode, outputs);
                     break;
                 case "getTop5Playlists":
-                    //Command.handleGetTop5PlaylistsCommand(library, userInformationList, commandNode, outputs);
+                    Command.handleGetTop5PlaylistsCommand(library, userInformationList, commandNode, outputs);
                     break;
                 case "getTop5Songs":
-                    //Command.handleGetTop5SongsCommand(library, userInformationList, commandNode, outputs);
+                    Command.handleGetTop5SongsCommand(library, userInformationList, commandNode, outputs);
                     break;
             }
         }

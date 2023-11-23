@@ -13,14 +13,25 @@ public class Playlist {
     private int visibilityStatus = 1;
     private List<SongInput> songs; // make that a list of SongInput
     private String owner;
+
+    public int getTimeCreated() {
+        return timeCreated;
+    }
+
+    private int timeCreated;
+    public int getFollowers() {
+        return followers;
+    }
+
     private int followers = 0;
 
     // Constructor
-    public Playlist(String name, int visibilityStatus, String owner) {
+    public Playlist(String name, int visibilityStatus, String owner, int timeCreated) {
         this.name = name;
         this.visibilityStatus = visibilityStatus;
         this.songs = new ArrayList<>();
         this.owner = owner;
+        this.timeCreated = timeCreated;
     }
 
     // Getters

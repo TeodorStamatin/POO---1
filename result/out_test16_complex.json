@@ -9901,4 +9901,14 @@
   "user" : "jack29",
   "timestamp" : 8580,
   "result" : [ "The Unforgiven" ]
+}, {
+  "command" : "getTop5Playlists",
+  "user" : "null",
+  "timestamp" : 8580,
+  "result" : [ "Dynamic Tracks Trek #2", "Vibey Tracks Safari #1", "Mellow Tracks Safari #2", "Groovy Beats Expedition #2", "Epic Tracks Safari #1" ]
+}, {
+  "command" : "getTop5Playlists",
+  "user" : "null",
+  "timestamp" : 8580,
+  "result" : [ "The Unforgiven", "Shape of You", "Love Story", "Blank Space", "Maps" ]
 } ]
