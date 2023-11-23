@@ -23,7 +23,7 @@
   "command" : "shuffle",
   "user" : "bob35",
   "timestamp" : 120,
-  "message" : "Please load a playlist before shuffling."
+  "message" : "The loaded source is not a playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -86,7 +86,7 @@
   "command" : "shuffle",
   "user" : "bob35",
   "timestamp" : 420,
-  "message" : "Please load a playlist before shuffling."
+  "message" : "The loaded source is not a playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -137,7 +137,7 @@
     "name" : "",
     "remainedTime" : 0,
     "repeat" : "No Repeat",
-    "shuffle" : true,
+    "shuffle" : false,
     "paused" : true
   }
 }, {
@@ -150,7 +150,7 @@
   "command" : "shuffle",
   "user" : "bob35",
   "timestamp" : 3120,
-  "message" : "Please load a playlist before shuffling."
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -169,7 +169,7 @@
     "name" : "Blank Space",
     "remainedTime" : 221,
     "repeat" : "No Repeat",
-    "shuffle" : true,
+    "shuffle" : false,
     "paused" : false
   }
 }, {
@@ -180,7 +180,7 @@
     "name" : "Blank Space",
     "remainedTime" : 171,
     "repeat" : "No Repeat",
-    "shuffle" : true,
+    "shuffle" : false,
     "paused" : false
   }
 }, {
@@ -191,7 +191,7 @@
     "name" : "Blank Space",
     "remainedTime" : 121,
     "repeat" : "No Repeat",
-    "shuffle" : true,
+    "shuffle" : false,
     "paused" : false
   }
 }, {
@@ -204,8 +204,8 @@
   "user" : "bob35",
   "timestamp" : 3270,
   "stats" : {
-    "name" : "Thinking Out Loud",
-    "remainedTime" : 261,
+    "name" : "Blank Space",
+    "remainedTime" : 101,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -215,8 +215,8 @@
   "user" : "bob35",
   "timestamp" : 3320,
   "stats" : {
-    "name" : "Thinking Out Loud",
-    "remainedTime" : 211,
+    "name" : "Blank Space",
+    "remainedTime" : 51,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -226,8 +226,8 @@
   "user" : "bob35",
   "timestamp" : 3370,
   "stats" : {
-    "name" : "Thinking Out Loud",
-    "remainedTime" : 161,
+    "name" : "Blank Space",
+    "remainedTime" : 1,
     "repeat" : "No Repeat",
     "shuffle" : true,
     "paused" : false
@@ -236,27 +236,27 @@
   "command" : "shuffle",
   "user" : "bob35",
   "timestamp" : 3680,
-  "message" : "Shuffle function deactivated successfully."
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 3690,
   "stats" : {
-    "name" : "Blank Space",
-    "remainedTime" : 111,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 3740,
   "stats" : {
-    "name" : "Blank Space",
-    "remainedTime" : 61,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 } ]

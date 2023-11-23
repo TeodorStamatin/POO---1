@@ -34,6 +34,7 @@ public class Command {
     private static String selectedType = "";
     private static PodcastInput currentPodcast;
     private static int selected = 0;
+    private static int loaded = 0;
     public static void handleSearchCommand(LibraryInput library, JsonNode commandNode, ArrayNode outputs, List<UserInformation> userInformationList) {
         String username = commandNode.get("username").asText();
         int timestamp = commandNode.get("timestamp").asInt();
@@ -56,6 +57,7 @@ public class Command {
         loadedSong = false;
         loadedPodcast = false;
         isPlaying = false;
+        loaded = 0;
 
         // Perform search based on type and filters
         lastSearchResults = SearchHelper.performSearch(library, type, filtersNode, userInformationList, username);
@@ -215,9 +217,11 @@ public class Command {
                 currentPlaylistState.setInitialTimestamp(timestamp);
                 currentPlaylistState.setLastTimestamp(timestamp);
                 currentPlaylistState.setPaused(false);
+                currentPlaylistState.reset();
             } else {
                 //String repeatStateText = RepeatStateConverter.convertToText(repeatState, loadedSong, loadedPlaylist, loadedPodcast);
                 currentPlaylistState = new PlaylistState(currentPlaylist.getName(), shuffleState, !isPlaying, "No Repeat", timestamp, timestamp, currentPlaylist.getSongs());
+                currentPlaylistState.reset();
             }
             if(currentPlayerState != null) {
                 currentPlayerState.setPaused(true);
@@ -240,6 +244,7 @@ public class Command {
             outputs.add(outputNode);
         }
         selected = 0;
+        loaded = 1;
     }
 
     public static void handlePlayPauseCommand(LibraryInput library, JsonNode commandNode, ArrayNode outputs) {
@@ -440,7 +445,6 @@ public class Command {
         String username = commandNode.get("username").asText();
         int timestamp = commandNode.get("timestamp").asInt();
 
-        // Check if player is in a valid state (i.e., loaded with a source)
         if (loadedSong) {
             currentPlayerState.setLastTimestamp(timestamp);
             // Create output JSON
@@ -459,7 +463,7 @@ public class Command {
             statsNode.put("name", currentPlayerState.getSelectedSongName());
             statsNode.put("remainedTime", currentPlayerState.getTimeRemaining());
             statsNode.put("repeat", currentPlayerState.getRepeatState());
-            statsNode.put("shuffle", currentPlayerState.isShuffleEnabled());
+            statsNode.put("shuffle", false);
             statsNode.put("paused", currentPlayerState.isPaused());
 
             // Add stats to the output JSON
@@ -553,13 +557,23 @@ public class Command {
         String username = commandNode.get("username").asText();
         int timestamp = commandNode.get("timestamp").asInt();
 
+        if(loaded == 0) {
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "shuffle");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Please load a source before using the shuffle function.");
+            // Adăugați rezultatul la lista de ieșiri
+            outputs.add(outputNode);
+            return;
+        }
         if (loadedPlaylist) {
             if(commandNode.has("seed")) {
                 long seed = commandNode.get("seed").asLong();
 
-                currentPodcastState.setLastTimestamp(timestamp);
-                currentPodcastState.setTimeRemaining(currentPodcastState.calculateTimeRemaining());
-                currentPodcastState.setInitialTimestamp(timestamp);
+                currentPlaylistState.setLastTimestamp(timestamp);
+                currentPlaylistState.setTimeRemaining(currentPlaylistState.calculateTimeRemaining());
+                currentPlaylistState.setInitialTimestamp(timestamp);
 
                 List<SongInput> playlistSongs = currentPlaylistState.gettracks();
                 List<Integer> indices = new ArrayList<>();
@@ -579,8 +593,22 @@ public class Command {
                 currentPlaylistState.setShuffleEnabled(false);
 
                 currentPlaylistState.shuffleOff();
-                currentPlaylistState.setInitialTimestamp(timestamp);
+                // print the track names and shuffle order
                 currentPlaylistState.setLastTimestamp(timestamp);
+                currentPlaylistState.setTimeRemaining(currentPlaylistState.calculateTimeRemaining());
+                currentPlaylistState.setInitialTimestamp(timestamp);
+
+                if(currentPlaylistState.getTimeRemaining() == 0) {
+                    currentPlaylistState.setPaused(true);
+                    ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                    outputNode.put("command", "shuffle");
+                    outputNode.put("user", username);
+                    outputNode.put("timestamp", timestamp);
+                    outputNode.put("message", "Please load a source before using the shuffle function.");
+                    // Add the output to the outputs array
+                    outputs.add(outputNode);
+                    return;
+                }
             }
             ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
             outputNode.put("command", "shuffle");
@@ -596,7 +624,7 @@ public class Command {
             outputNode.put("command", "shuffle");
             outputNode.put("user", username);
             outputNode.put("timestamp", timestamp);
-            outputNode.put("message", "Please load a playlist before shuffling.");
+            outputNode.put("message", "The loaded source is not a playlist.");
 
             // Add the output to the outputs array
             outputs.add(outputNode);

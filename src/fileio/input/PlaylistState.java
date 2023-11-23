@@ -37,6 +37,7 @@ public class PlaylistState {
     int savedTimeRemaining;
     List<Integer> shuffleOrder;
     int currentShuffleIndex = 0;
+    Boolean waitSong = false;
 
     // Constructor
     public PlaylistState(String selectedPlaylistName, boolean isShuffleEnabled, boolean isPaused, String repeatState, int lastTimestamp, int initialTimestamp, List<SongInput> tracks) {
@@ -95,46 +96,63 @@ public class PlaylistState {
             return timeRemaining;
         } else {
             int elapsedTime = lastTimestamp - initialTimestamp;
-            // check if you need to go to the next episode
+
             if(isShuffleEnabled) {
-                // TO DO check if current track index == saved track index. if 1, then finish the current song
-                // if 0, go to shuffle tracks.
                 while(elapsedTime >= timeRemaining) {
-                    elapsedTime -= timeRemaining;
-                    currentShuffleIndex++;
-                    currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
-                    if (repeatState.equals("Repeat Current Song")) {
-                        currentShuffleIndex--;
+                    if(waitSong) {
+                        waitSong = false;
+                        elapsedTime -= timeRemaining;
+                        currentShuffleIndex = savedTrackIndex;
                         currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
-                    }
-                    if (currentShuffleIndex >= tracks.size()) {
-                        if(repeatState.equals("Repeat All")) {
-                            currentShuffleIndex = 0;
+                        updateCurrentTrackInfo();
+                    } else {
+                        elapsedTime -= timeRemaining;
+                        currentShuffleIndex++;
+                        currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
+                        if (repeatState.equals("Repeat Current Song")) {
+                            currentShuffleIndex--;
                             currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
-                        } else {
-                            currentTrackIndex = 0;
-                            return 0;
                         }
+                        if (currentShuffleIndex >= tracks.size()) {
+                            if(repeatState.equals("Repeat All")) {
+                                currentShuffleIndex = 0;
+                                currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
+                            } else {
+                                currentTrackIndex = 0;
+                                isShuffleEnabled = false;
+                                return 0;
+                            }
+                        }
+                        updateCurrentTrackInfo();
                     }
-                    updateCurrentTrackInfo();
                 }
             } else {
-                // check if 
                 while(elapsedTime >= timeRemaining) {
-                    elapsedTime -= timeRemaining;
-                    currentTrackIndex++;
-                    if (repeatState.equals("Repeat Current Song")) {
-                        currentTrackIndex--;
-                    }
-                    if (currentTrackIndex >= tracks.size()) {
-                        if(repeatState.equals("Repeat All")) {
-                            currentTrackIndex = 0;
-                        } else {
+                    if(waitSong) {
+                        waitSong = false;
+                        elapsedTime -= timeRemaining;
+                        currentTrackIndex++;
+                        if(currentTrackIndex >= tracks.size()) {
                             currentTrackIndex = 0;
                             return 0;
                         }
+                        updateCurrentTrackInfo();
+                    } else {
+                        elapsedTime -= timeRemaining;
+                        currentTrackIndex++;
+                        if (repeatState.equals("Repeat Current Song")) {
+                            currentTrackIndex--;
+                        }
+                        if (currentTrackIndex >= tracks.size()) {
+                            if(repeatState.equals("Repeat All")) {
+                                currentTrackIndex = 0;
+                            } else {
+                                currentTrackIndex = 0;
+                                return 0;
+                            }
+                        }
+                        updateCurrentTrackInfo();
                     }
-                    updateCurrentTrackInfo();
                 }
             }
             return Math.max(0, timeRemaining - elapsedTime);
@@ -151,20 +169,23 @@ public class PlaylistState {
         return tracks.get(currentTrackIndex).getName();
     }
     public void shuffleOn(List<Integer> shuffleOrder) {
-        // TO DO implement logic for calculate time remaining above
-        // saved time remaining would not be needed anymore
-        savedTrackIndex = currentTrackIndex;
-        savedTimeRemaining = timeRemaining;
+
+        if(!isShuffleEnabled) {
+            savedTrackIndex = currentTrackIndex + 1;
+        }
+
         this.shuffleOrder = shuffleOrder;
-        currentShuffleIndex = 0;
-        currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
-        List<SongInput> temp = gettracks();
-        timeRemaining = temp.get(currentTrackIndex).getDuration();
+        waitSong = true;
     }
     public void shuffleOff() {
-        // TO DO impelment logic so that the last shuffled song plays until the end
-        // it should be current track index = saved track index, and implement the logic for calculate time remaining above
-        currentTrackIndex = savedTrackIndex;
-        timeRemaining = savedTimeRemaining;
+
+        waitSong = true;
+        currentShuffleIndex = currentTrackIndex;
+        currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
+    }
+    public void reset() {
+        currentTrackIndex = 0;
+        isShuffleEnabled = false;
+        updateCurrentTrackInfo();
     }
 }
