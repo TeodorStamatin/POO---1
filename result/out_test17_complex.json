@@ -4679,6 +4679,11 @@
     "paused" : true
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "emily30",
+  "timestamp" : 5540,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "repeat",
   "user" : "emily30",
   "timestamp" : 5540,
@@ -4845,6 +4850,11 @@
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "david27",
+  "timestamp" : 5630,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "prev",
   "user" : "david27",
@@ -4941,6 +4951,11 @@
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "jack29",
+  "timestamp" : 5690,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "status",
   "user" : "jack29",
@@ -4996,6 +5011,11 @@
     "paused" : false
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "carol19",
+  "timestamp" : 5720,
+  "message" : "Visibility status updated successfully to public."
+}, {
   "command" : "prev",
   "user" : "carol19",
   "timestamp" : 5720,
@@ -5011,6 +5031,11 @@
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "david27",
+  "timestamp" : 5730,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "like",
   "user" : "david27",
@@ -5064,6 +5089,11 @@
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "grace25",
+  "timestamp" : 5760,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -5204,6 +5234,11 @@
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "emily30",
+  "timestamp" : 5840,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -5269,6 +5304,11 @@
     "paused" : true
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "irene33",
+  "timestamp" : 5880,
+  "message" : "Visibility status updated successfully to public."
+}, {
   "command" : "like",
   "user" : "irene33",
   "timestamp" : 5880,
@@ -5284,6 +5324,11 @@
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "jack29",
+  "timestamp" : 5890,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "prev",
   "user" : "jack29",
@@ -5333,6 +5378,11 @@
     "paused" : false
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "carol19",
+  "timestamp" : 5920,
+  "message" : "Visibility status updated successfully to public."
+}, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 5920,
@@ -5376,6 +5426,11 @@
     "paused" : false
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "emily30",
+  "timestamp" : 5940,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 5940,
@@ -5413,6 +5468,11 @@
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "grace25",
+  "timestamp" : 5960,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "like",
   "user" : "grace25",
@@ -5493,6 +5553,11 @@
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "bob35",
+  "timestamp" : 6010,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "repeat",
   "user" : "bob35",
@@ -5596,6 +5661,11 @@
     "paused" : false
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "henry26",
+  "timestamp" : 6070,
+  "message" : "Visibility status updated successfully to public."
+}, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 6070,
@@ -5682,6 +5752,11 @@
     "paused" : true
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "carol19",
+  "timestamp" : 6120,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "shuffle",
   "user" : "carol19",
   "timestamp" : 6120,
@@ -5873,6 +5948,11 @@
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "emily30",
+  "timestamp" : 6240,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "prev",
   "user" : "emily30",
@@ -5943,6 +6023,11 @@
     "paused" : false
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "irene33",
+  "timestamp" : 6280,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "prev",
   "user" : "irene33",
   "timestamp" : 6280,
@@ -5979,6 +6064,11 @@
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "alice22",
+  "timestamp" : 6300,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "repeat",
   "user" : "alice22",
@@ -6097,6 +6187,11 @@
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "henry26",
+  "timestamp" : 6370,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -6252,6 +6347,11 @@
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "grace25",
+  "timestamp" : 6460,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "prev",
   "user" : "grace25",
@@ -6670,6 +6770,11 @@
     "paused" : false
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "bob35",
+  "timestamp" : 6710,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "playPause",
   "user" : "bob35",
   "timestamp" : 6710,
@@ -6829,6 +6934,11 @@
     "paused" : false
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "alice22",
+  "timestamp" : 6800,
+  "message" : "Visibility status updated successfully to public."
+}, {
   "command" : "prev",
   "user" : "alice22",
   "timestamp" : 6800,
@@ -6941,6 +7051,11 @@
     "paused" : false
   }
 }, {
+  "command" : "switchVisibility",
+  "user" : "grace25",
+  "timestamp" : 6860,
+  "message" : "Visibility status updated successfully to private."
+}, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 6860,
@@ -6978,6 +7093,11 @@
     "shuffle" : true,
     "paused" : false
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "irene33",
+  "timestamp" : 6880,
+  "message" : "Visibility status updated successfully to public."
 }, {
   "command" : "repeat",
   "user" : "irene33",
@@ -7064,6 +7184,11 @@
     "shuffle" : true,
     "paused" : true
   }
+}, {
+  "command" : "switchVisibility",
+  "user" : "david27",
+  "timestamp" : 6930,
+  "message" : "Visibility status updated successfully to private."
 }, {
   "command" : "next",
   "user" : "david27",
@@ -7194,6 +7319,11 @@
   "timestamp" : 6990,
   "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 6990,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7000,
@@ -7204,6 +7334,11 @@
   "user" : "bob35",
   "timestamp" : 7000,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7000,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7216,6 +7351,11 @@
   "timestamp" : 7010,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7010,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7020,
@@ -7226,6 +7366,11 @@
   "user" : "david27",
   "timestamp" : 7020,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7020,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -7238,6 +7383,11 @@
   "timestamp" : 7030,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7030,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7040,
@@ -7248,6 +7398,11 @@
   "user" : "frank21",
   "timestamp" : 7040,
   "message" : "Successfully selected Classic Grooves Trek #2."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7040,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -7260,6 +7415,11 @@
   "timestamp" : 7050,
   "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7050,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7060,
@@ -7270,6 +7430,11 @@
   "user" : "henry26",
   "timestamp" : 7060,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7060,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7282,6 +7447,11 @@
   "timestamp" : 7070,
   "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7070,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7080,
@@ -7292,6 +7462,11 @@
   "user" : "jack29",
   "timestamp" : 7080,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7080,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7304,6 +7479,11 @@
   "timestamp" : 7090,
   "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7090,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7100,
@@ -7315,6 +7495,11 @@
   "timestamp" : 7100,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7100,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 7110,
@@ -7325,6 +7510,11 @@
   "user" : "carol19",
   "timestamp" : 7110,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7110,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -7337,6 +7527,11 @@
   "timestamp" : 7120,
   "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7120,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7130,
@@ -7347,6 +7542,11 @@
   "user" : "emily30",
   "timestamp" : 7130,
   "message" : "Successfully selected Chill Sounds Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7130,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -7359,6 +7559,11 @@
   "timestamp" : 7140,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7140,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7150,
@@ -7370,6 +7575,11 @@
   "timestamp" : 7150,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7150,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7160,
@@ -7380,6 +7590,11 @@
   "user" : "henry26",
   "timestamp" : 7160,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7160,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7392,6 +7607,11 @@
   "timestamp" : 7170,
   "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7170,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7180,
@@ -7402,6 +7622,11 @@
   "user" : "jack29",
   "timestamp" : 7180,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7180,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7414,6 +7639,11 @@
   "timestamp" : 7190,
   "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7190,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7200,
@@ -7424,6 +7654,11 @@
   "user" : "bob35",
   "timestamp" : 7200,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7200,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7436,6 +7671,11 @@
   "timestamp" : 7210,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7210,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7220,
@@ -7446,6 +7686,11 @@
   "user" : "david27",
   "timestamp" : 7220,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7220,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -7458,6 +7703,11 @@
   "timestamp" : 7230,
   "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7230,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7240,
@@ -7468,6 +7718,11 @@
   "user" : "frank21",
   "timestamp" : 7240,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7240,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -7480,6 +7735,11 @@
   "timestamp" : 7250,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7250,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7260,
@@ -7490,6 +7750,11 @@
   "user" : "henry26",
   "timestamp" : 7260,
   "message" : "Successfully selected Breezy Tunes Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7260,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7502,6 +7767,11 @@
   "timestamp" : 7270,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7270,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7280,
@@ -7512,6 +7782,11 @@
   "user" : "jack29",
   "timestamp" : 7280,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7280,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7524,6 +7799,11 @@
   "timestamp" : 7290,
   "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7290,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7300,
@@ -7534,6 +7814,11 @@
   "user" : "bob35",
   "timestamp" : 7300,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7300,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7546,6 +7831,11 @@
   "timestamp" : 7310,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7310,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7320,
@@ -7556,6 +7846,11 @@
   "user" : "david27",
   "timestamp" : 7320,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7320,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -7568,6 +7863,11 @@
   "timestamp" : 7330,
   "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7330,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7340,
@@ -7578,6 +7878,11 @@
   "user" : "frank21",
   "timestamp" : 7340,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7340,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -7590,6 +7895,11 @@
   "timestamp" : 7350,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7350,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7360,
@@ -7600,6 +7910,11 @@
   "user" : "henry26",
   "timestamp" : 7360,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7360,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7612,6 +7927,11 @@
   "timestamp" : 7370,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7370,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7380,
@@ -7622,6 +7942,11 @@
   "user" : "jack29",
   "timestamp" : 7380,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7380,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7634,6 +7959,11 @@
   "timestamp" : 7390,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7390,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7400,
@@ -7644,6 +7974,11 @@
   "user" : "bob35",
   "timestamp" : 7400,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7400,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7656,6 +7991,11 @@
   "timestamp" : 7410,
   "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7410,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7420,
@@ -7666,6 +8006,11 @@
   "user" : "david27",
   "timestamp" : 7420,
   "message" : "Successfully selected Stellar Tunes Quest #2."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7420,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -7678,6 +8023,11 @@
   "timestamp" : 7430,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7430,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7440,
@@ -7688,6 +8038,11 @@
   "user" : "frank21",
   "timestamp" : 7440,
   "message" : "Successfully selected Chill Melodies Voyage #1."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7440,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -7700,6 +8055,11 @@
   "timestamp" : 7450,
   "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7450,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7460,
@@ -7710,6 +8070,11 @@
   "user" : "henry26",
   "timestamp" : 7460,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7460,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7722,6 +8087,11 @@
   "timestamp" : 7470,
   "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7470,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7480,
@@ -7732,6 +8102,11 @@
   "user" : "jack29",
   "timestamp" : 7480,
   "message" : "Successfully selected Vibey Bangers Safari #1."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7480,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7744,6 +8119,11 @@
   "timestamp" : 7490,
   "message" : "Successfully selected Classic Harmonies Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7490,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7500,
@@ -7754,6 +8134,11 @@
   "user" : "bob35",
   "timestamp" : 7500,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7500,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7766,6 +8151,11 @@
   "timestamp" : 7510,
   "message" : "Successfully selected Groovy Grooves Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7510,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7520,
@@ -7776,6 +8166,11 @@
   "user" : "david27",
   "timestamp" : 7520,
   "message" : "Successfully selected Breezy Bangers Quest #1."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7520,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -7788,6 +8183,11 @@
   "timestamp" : 7530,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7530,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7540,
@@ -7798,6 +8198,11 @@
   "user" : "frank21",
   "timestamp" : 7540,
   "message" : "Successfully selected Chill Melodies Voyage #1."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7540,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -7810,6 +8215,11 @@
   "timestamp" : 7550,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7550,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7560,
@@ -7820,6 +8230,11 @@
   "user" : "henry26",
   "timestamp" : 7560,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7560,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7832,6 +8247,11 @@
   "timestamp" : 7570,
   "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7570,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7580,
@@ -7842,6 +8262,11 @@
   "user" : "jack29",
   "timestamp" : 7580,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7580,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -7854,6 +8279,11 @@
   "timestamp" : 7590,
   "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7590,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7600,
@@ -7864,6 +8294,11 @@
   "user" : "bob35",
   "timestamp" : 7600,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7600,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -7876,6 +8311,11 @@
   "timestamp" : 7610,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7610,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7620,
@@ -7886,6 +8326,11 @@
   "user" : "david27",
   "timestamp" : 7620,
   "message" : "Successfully selected Stellar Tunes Quest #2."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7620,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -7898,6 +8343,11 @@
   "timestamp" : 7630,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7630,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7640,
@@ -7908,6 +8358,11 @@
   "user" : "frank21",
   "timestamp" : 7640,
   "message" : "Successfully selected Chill Melodies Voyage #1."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7640,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -7920,6 +8375,11 @@
   "timestamp" : 7650,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7650,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7660,
@@ -7930,6 +8390,11 @@
   "user" : "henry26",
   "timestamp" : 7660,
   "message" : "Successfully selected Breezy Tunes Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7660,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -7942,6 +8407,11 @@
   "timestamp" : 7670,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7670,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7680,
@@ -7953,6 +8423,11 @@
   "timestamp" : 7680,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7680,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7690,
@@ -7963,6 +8438,11 @@
   "user" : "alice22",
   "timestamp" : 7690,
   "message" : "Successfully selected Classic Sounds Expedition #2."
+}, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7690,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -7975,6 +8455,11 @@
   "timestamp" : 7700,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7700,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 7710,
@@ -7985,6 +8470,11 @@
   "user" : "carol19",
   "timestamp" : 7710,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7710,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -7997,6 +8487,11 @@
   "timestamp" : 7720,
   "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7720,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7730,
@@ -8007,6 +8502,11 @@
   "user" : "emily30",
   "timestamp" : 7730,
   "message" : "Successfully selected Chill Sounds Journey #1."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7730,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -8019,6 +8519,11 @@
   "timestamp" : 7740,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7740,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7750,
@@ -8029,6 +8534,11 @@
   "user" : "grace25",
   "timestamp" : 7750,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7750,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8041,6 +8551,11 @@
   "timestamp" : 7760,
   "message" : "Successfully selected Breezy Tunes Odyssey #2."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7760,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7770,
@@ -8051,6 +8566,11 @@
   "user" : "irene33",
   "timestamp" : 7770,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7770,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8063,6 +8583,11 @@
   "timestamp" : 7780,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7780,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 7790,
@@ -8073,6 +8598,11 @@
   "user" : "alice22",
   "timestamp" : 7790,
   "message" : "Successfully selected Classic Sounds Expedition #2."
+}, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7790,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8085,6 +8615,11 @@
   "timestamp" : 7800,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7800,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 7810,
@@ -8095,6 +8630,11 @@
   "user" : "carol19",
   "timestamp" : 7810,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7810,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8107,6 +8647,11 @@
   "timestamp" : 7820,
   "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7820,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 7830,
@@ -8118,6 +8663,11 @@
   "timestamp" : 7830,
   "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7830,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7840,
@@ -8128,6 +8678,11 @@
   "user" : "frank21",
   "timestamp" : 7840,
   "message" : "Successfully selected Classic Grooves Trek #2."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7840,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -8140,6 +8695,11 @@
   "timestamp" : 7850,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7850,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 7860,
@@ -8150,6 +8710,11 @@
   "user" : "henry26",
   "timestamp" : 7860,
   "message" : "Successfully selected Breezy Tunes Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7860,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -8162,6 +8727,11 @@
   "timestamp" : 7870,
   "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7870,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7880,
@@ -8172,6 +8742,11 @@
   "user" : "jack29",
   "timestamp" : 7880,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7880,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -8184,6 +8759,11 @@
   "timestamp" : 7890,
   "message" : "Successfully selected Classic Harmonies Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7890,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 7900,
@@ -8194,6 +8774,11 @@
   "user" : "bob35",
   "timestamp" : 7900,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 7900,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8206,6 +8791,11 @@
   "timestamp" : 7910,
   "message" : "Successfully selected Groovy Grooves Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 7910,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 7920,
@@ -8216,6 +8806,11 @@
   "user" : "david27",
   "timestamp" : 7920,
   "message" : "Successfully selected Breezy Bangers Quest #1."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 7920,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -8228,6 +8823,11 @@
   "timestamp" : 7930,
   "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 7930,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 7940,
@@ -8239,6 +8839,11 @@
   "timestamp" : 7940,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 7940,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 7950,
@@ -8249,6 +8854,11 @@
   "user" : "grace25",
   "timestamp" : 7950,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 7950,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8261,6 +8871,11 @@
   "timestamp" : 7960,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 7960,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7970,
@@ -8272,6 +8887,11 @@
   "timestamp" : 7970,
   "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 7970,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 7980,
@@ -8282,6 +8902,11 @@
   "user" : "jack29",
   "timestamp" : 7980,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 7980,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -8294,6 +8919,11 @@
   "timestamp" : 7990,
   "message" : "Successfully selected Classic Harmonies Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 7990,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 8000,
@@ -8304,6 +8934,11 @@
   "user" : "bob35",
   "timestamp" : 8000,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8000,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8316,6 +8951,11 @@
   "timestamp" : 8010,
   "message" : "Successfully selected Groovy Grooves Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8010,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8020,
@@ -8326,6 +8966,11 @@
   "user" : "david27",
   "timestamp" : 8020,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8020,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -8338,6 +8983,11 @@
   "timestamp" : 8030,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8030,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 8040,
@@ -8348,6 +8998,11 @@
   "user" : "frank21",
   "timestamp" : 8040,
   "message" : "Successfully selected Classic Grooves Trek #2."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8040,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -8360,6 +9015,11 @@
   "timestamp" : 8050,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8050,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 8060,
@@ -8370,6 +9030,11 @@
   "user" : "henry26",
   "timestamp" : 8060,
   "message" : "Successfully selected Breezy Tunes Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8060,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -8382,6 +9047,11 @@
   "timestamp" : 8070,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8070,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 8080,
@@ -8392,6 +9062,11 @@
   "user" : "jack29",
   "timestamp" : 8080,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8080,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -8404,6 +9079,11 @@
   "timestamp" : 8090,
   "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 8090,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 8100,
@@ -8414,6 +9094,11 @@
   "user" : "bob35",
   "timestamp" : 8100,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8100,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8426,6 +9111,11 @@
   "timestamp" : 8110,
   "message" : "Successfully selected Groovy Grooves Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8110,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8120,
@@ -8436,6 +9126,11 @@
   "user" : "david27",
   "timestamp" : 8120,
   "message" : "Successfully selected Breezy Bangers Quest #1."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8120,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -8448,6 +9143,11 @@
   "timestamp" : 8130,
   "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8130,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 8140,
@@ -8459,6 +9159,11 @@
   "timestamp" : 8140,
   "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8140,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 8150,
@@ -8469,6 +9174,11 @@
   "user" : "grace25",
   "timestamp" : 8150,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8150,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8481,6 +9191,11 @@
   "timestamp" : 8160,
   "message" : "Successfully selected Breezy Tunes Odyssey #2."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8160,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 8170,
@@ -8492,6 +9207,11 @@
   "timestamp" : 8170,
   "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8170,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 8180,
@@ -8502,6 +9222,11 @@
   "user" : "jack29",
   "timestamp" : 8180,
   "message" : "Successfully selected Vibey Bangers Safari #1."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8180,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -8514,6 +9239,11 @@
   "timestamp" : 8190,
   "message" : "Successfully selected Classic Harmonies Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 8190,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 8200,
@@ -8524,6 +9254,11 @@
   "user" : "bob35",
   "timestamp" : 8200,
   "message" : "Successfully selected Electric Harmonies Odyssey #2."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8200,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8536,6 +9271,11 @@
   "timestamp" : 8210,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8210,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8220,
@@ -8546,6 +9286,11 @@
   "user" : "david27",
   "timestamp" : 8220,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8220,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -8558,6 +9303,11 @@
   "timestamp" : 8230,
   "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8230,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 8240,
@@ -8569,6 +9319,11 @@
   "timestamp" : 8240,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8240,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 8250,
@@ -8579,6 +9334,11 @@
   "user" : "grace25",
   "timestamp" : 8250,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8250,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8591,6 +9351,11 @@
   "timestamp" : 8260,
   "message" : "Successfully selected Dynamic Grooves Expedition #1."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8260,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 8270,
@@ -8601,6 +9366,11 @@
   "user" : "irene33",
   "timestamp" : 8270,
   "message" : "Successfully selected Electric Melodies Escape #2."
+}, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8270,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -8613,6 +9383,11 @@
   "timestamp" : 8280,
   "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8280,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 8290,
@@ -8623,6 +9398,11 @@
   "user" : "alice22",
   "timestamp" : 8290,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 8290,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -8635,6 +9415,11 @@
   "timestamp" : 8300,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8300,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 8310,
@@ -8645,6 +9430,11 @@
   "user" : "carol19",
   "timestamp" : 8310,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8310,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -8657,6 +9447,11 @@
   "timestamp" : 8320,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8320,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 8330,
@@ -8667,6 +9462,11 @@
   "user" : "emily30",
   "timestamp" : 8330,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8330,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -8679,6 +9479,11 @@
   "timestamp" : 8340,
   "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8340,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 8350,
@@ -8689,6 +9494,11 @@
   "user" : "grace25",
   "timestamp" : 8350,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
+}, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8350,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -8701,6 +9511,11 @@
   "timestamp" : 8360,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8360,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 8370,
@@ -8712,6 +9527,11 @@
   "timestamp" : 8370,
   "message" : "The selected ID is too high."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8370,
+  "message" : "Please select a source before following or unfollowing."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 8380,
@@ -8722,6 +9542,11 @@
   "user" : "jack29",
   "timestamp" : 8380,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8380,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -8734,6 +9559,11 @@
   "timestamp" : 8390,
   "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
+  "command" : "follow",
+  "user" : "alice22",
+  "timestamp" : 8390,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 8400,
@@ -8744,6 +9574,11 @@
   "user" : "bob35",
   "timestamp" : 8400,
   "message" : "Successfully selected Breezy Rhythms Trek #1."
+}, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 8400,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -8756,6 +9591,11 @@
   "timestamp" : 8410,
   "message" : "Successfully selected Groovy Grooves Dream #1."
 }, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 8410,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 8420,
@@ -8766,6 +9606,11 @@
   "user" : "david27",
   "timestamp" : 8420,
   "message" : "Successfully selected Breezy Bangers Quest #1."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 8420,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -8778,6 +9623,11 @@
   "timestamp" : 8430,
   "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 8430,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 8440,
@@ -8788,6 +9638,11 @@
   "user" : "frank21",
   "timestamp" : 8440,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "frank21",
+  "timestamp" : 8440,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -8800,6 +9655,11 @@
   "timestamp" : 8450,
   "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
+  "command" : "follow",
+  "user" : "grace25",
+  "timestamp" : 8450,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 8460,
@@ -8810,6 +9670,11 @@
   "user" : "henry26",
   "timestamp" : 8460,
   "message" : "The selected ID is too high."
+}, {
+  "command" : "follow",
+  "user" : "henry26",
+  "timestamp" : 8460,
+  "message" : "Please select a source before following or unfollowing."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -8822,6 +9687,11 @@
   "timestamp" : 8470,
   "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
+  "command" : "follow",
+  "user" : "irene33",
+  "timestamp" : 8470,
+  "message" : "Playlist unfollowed successfully."
+}, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 8480,
@@ -8832,6 +9702,11 @@
   "user" : "jack29",
   "timestamp" : 8480,
   "message" : "Successfully selected Groovy Rhythms Dream #2."
+}, {
+  "command" : "follow",
+  "user" : "jack29",
+  "timestamp" : 8480,
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "showPlaylists",
   "user" : "alice22",
@@ -8845,7 +9720,7 @@
     "name" : "Classic Sounds Expedition #2",
     "songs" : [ "Angie", "Shape of You", "Sad But True", "Love Story", "Bohemian Rhapsody", "The Man", "Money Trees", "Thinking Out Loud" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 1
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8880,7 +9755,7 @@
     "name" : "Groovy Grooves Dream #1",
     "songs" : [ "Maps", "Under Pressure", "Stairway to Heaven", "Start Me Up", "Shape of You" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 1
   }, {
     "name" : "Groovy Grooves Expedition #2",
     "songs" : [ "Love Story", "Don't", "Money Trees", "Maps" ],
@@ -8905,7 +9780,7 @@
     "name" : "Stellar Tunes Quest #2",
     "songs" : [ "Start Me Up", "Dream On", "Angie", "Gimme Shelter", "Begin Again", "Black Dog", "Stairway to Heaven" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 1
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8925,7 +9800,7 @@
     "name" : "Chill Sounds Adventure #2",
     "songs" : [ "Start Me Up", "Bohemian Rhapsody", "Blank Space" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 1
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -8965,7 +9840,7 @@
     "name" : "Dynamic Tracks Adventure #2",
     "songs" : [ "Begin Again", "Gimme Shelter", "Start Me Up" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 1
   } ]
 }, {
   "command" : "showPreferredSongs",
@@ -9000,7 +9875,7 @@
     "name" : "Chill Sounds Voyage #1",
     "songs" : [ "The Man", "Blank Space", "Shape of You", "Sad But True", "Don't", "Money Trees", "Happier", "Paint It Black", "Begin Again" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 1
   }, {
     "name" : "Electric Melodies Escape #2",
     "songs" : [ "Dream On", "Don't", "Thinking Out Loud", "Black Dog" ],
@@ -9020,11 +9895,11 @@
     "name" : "Vibey Bangers Safari #1",
     "songs" : [ "Don't", "Start Me Up", "Stairway to Heaven", "Thinking Out Loud", "Black Dog", "The Man" ],
     "visibility" : "public",
-    "followers" : 0
+    "followers" : 1
   }, {
     "name" : "Groovy Rhythms Dream #2",
     "songs" : [ "Shape of You", "Money Trees", "Delicate", "Start Me Up", "Blank Space", "Begin Again", "Sad But True" ],
-    "visibility" : "public",
+    "visibility" : "private",
     "followers" : 0
   } ]
 }, {

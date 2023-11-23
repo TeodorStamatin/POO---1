@@ -204,13 +204,18 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 2460,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 1 results",
+  "results" : [ "My first playlist" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2490,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected My first playlist."
+}, {
+  "command" : "follow",
+  "user" : "emily30",
+  "timestamp" : 2520,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -223,6 +228,11 @@
   "timestamp" : 2580,
   "message" : "Successfully selected My first playlist."
 }, {
+  "command" : "follow",
+  "user" : "bob35",
+  "timestamp" : 2600,
+  "message" : "Playlist followed successfully."
+}, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 2765,
@@ -233,6 +243,11 @@
   "user" : "david27",
   "timestamp" : 2810,
   "message" : "Successfully selected Felt cute might delete later."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 2850,
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "showPreferredSongs",
   "user" : "bob35",

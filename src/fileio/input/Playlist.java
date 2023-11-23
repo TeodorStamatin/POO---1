@@ -5,9 +5,15 @@ import java.util.List;
 
 public class Playlist {
     private String name;
-    private int visibilityStatus;
+
+    public void setVisibilityStatus(int visibilityStatus) {
+        this.visibilityStatus = visibilityStatus;
+    }
+
+    private int visibilityStatus = 1;
     private List<SongInput> songs; // make that a list of SongInput
     private String owner;
+    private int followers = 0;
 
     // Constructor
     public Playlist(String name, int visibilityStatus, String owner) {
@@ -18,7 +24,12 @@ public class Playlist {
     }
 
     // Getters
-
+    public void increaseFollowers() {
+        followers++;
+    }
+    public void decreaseFollowers() {
+        followers--;
+    }
     public String getName() {
         return name;
     }

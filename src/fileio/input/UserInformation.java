@@ -11,7 +11,7 @@ public class UserInformation {
     private String city;
     private List<String> likedSongs;
     private List<Playlist> playlists;
-    private Set<String> followedPlaylists;
+    private List<String> followedPlaylists;
 
     // Constructor
     public UserInformation(String username, int age, String city) {
@@ -20,7 +20,7 @@ public class UserInformation {
         this.city = city;
         this.likedSongs = new ArrayList<>();
         this.playlists = new ArrayList<>();
-        this.followedPlaylists = new HashSet<>();
+        this.followedPlaylists = new ArrayList<>();
     }
 
     // Getters and setters for basic user information
@@ -80,7 +80,7 @@ public class UserInformation {
 
     // Followed playlists methods
 
-    public Set<String> getFollowedPlaylists() {
+    public List<String> getFollowedPlaylists() {
         return followedPlaylists;
     }
 

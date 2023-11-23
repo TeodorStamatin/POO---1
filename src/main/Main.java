@@ -150,6 +150,19 @@ public final class Main {
                     break;
                 case "backward":
                     Command.handleBackwardCommand(library, commandNode, outputs);
+                    break;
+                case "follow":
+                    Command.handleFollowCommand(library, userInformationList, commandNode, outputs);
+                    break;
+                case "switchVisibility":
+                    Command.handleSwitchVisibilityCommand(library, userInformationList, commandNode, outputs);
+                    break;
+                case "getTop5Playlists":
+                    //Command.handleGetTop5PlaylistsCommand(library, userInformationList, commandNode, outputs);
+                    break;
+                case "getTop5Songs":
+                    //Command.handleGetTop5SongsCommand(library, userInformationList, commandNode, outputs);
+                    break;
             }
         }
 

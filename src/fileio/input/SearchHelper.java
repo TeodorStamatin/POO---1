@@ -49,6 +49,22 @@ public class SearchHelper {
                 }
             }
         }
+
+        if(results.size() == 0) {
+            for(UserInformation userInformation : userInformationList) {
+                if((ownerFilter == null || userInformation.getUsername().equalsIgnoreCase(ownerFilter))) {
+                    for(Playlist playlist : userInformation.getPlaylists()) {
+                        if((nameFilter == null || playlist.getName().equalsIgnoreCase(nameFilter))) {
+                            if (results.size() < maxResults && playlist.getVisibilityStatus() == 1) {
+                                results.add(playlist.getName());
+                            } else {
+                                break; // Break out of the loop if the max results limit is reached
+                            }
+                        }
+                    }
+                }
+            }
+        }
         return results;
     }
     private static List<String> performSongSearch(LibraryInput library, JsonNode filtersNode, int maxResults) {

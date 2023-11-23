@@ -31,6 +31,13 @@ public class SelectHelper {
                 return playlist;
             }
         }
+        for(UserInformation userInformation : userInformationList) {
+            for (Playlist playlist : userInformation.getPlaylists()) {
+                if (playlist.getName().equalsIgnoreCase(playlistName)) {
+                    return playlist;
+                }
+            }
+        }
         return null;
     }
 

@@ -35,6 +35,7 @@ public class Command {
     private static PodcastInput currentPodcast;
     private static int selected = 0;
     private static int loaded = 0;
+    private static boolean selectedForFollow = false;
     public static void handleSearchCommand(LibraryInput library, JsonNode commandNode, ArrayNode outputs, List<UserInformation> userInformationList) {
         String username = commandNode.get("username").asText();
         int timestamp = commandNode.get("timestamp").asInt();
@@ -87,6 +88,16 @@ public class Command {
         // Assuming itemNumber is 1-indexed
         int selectedIndex = itemNumber - 1;
 
+        if(searchType.equals("")) {
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "select");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Please conduct a search before making a selection.");
+            // Adăugați rezultatul la lista de ieșiri
+            outputs.add(outputNode);
+            return;
+        }
         // Check if lastSearchResults is not null and selectedIndex is within the valid range
         if (lastSearchResults != null && selectedIndex >= 0 && selectedIndex < lastSearchResults.size()) {
             selectedType = searchType;
@@ -94,12 +105,19 @@ public class Command {
             switch (selectedType) {
                 case "song":
                     currentSong = SelectHelper.getSongByName(library, selectedCommand);
+                    currentPlaylist = null;
+                    currentPodcast = null;
                     break;
                 case "podcast":
                     currentPodcast = SelectHelper.getPodcastByName(library, selectedCommand);
+                    currentPlaylist = null;
+                    currentSong = null;
                     break;
                 case "playlist":
                     currentPlaylist = SelectHelper.getPlaylistByName(library, selectedCommand, userInformationList, username);
+                    currentSong = null;
+                    currentPodcast = null;
+                    selectedForFollow = true;
                     break;
 
             }
@@ -244,6 +262,7 @@ public class Command {
             outputs.add(outputNode);
         }
         selected = 0;
+        searchType = "";
         loaded = 1;
     }
 
@@ -1114,4 +1133,125 @@ public class Command {
             outputs.add(outputNode);
         }
     }
+
+    public static void handleFollowCommand(LibraryInput library, List<UserInformation> userInformationList, JsonNode commandNode, ArrayNode outputs) {
+
+        String username = commandNode.get("username").asText();
+        int timestamp = commandNode.get("timestamp").asInt();
+
+        if(currentSong != null || currentPodcast != null) {
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "follow");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "The selected source is not a playlist.");
+            outputs.add(outputNode);
+            return;
+        }
+        if(selected == 0 || selectedForFollow == false) {
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "follow");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Please select a source before following or unfollowing.");
+            outputs.add(outputNode);
+            return;
+        }
+        if(selectedForFollow) {
+            selectedForFollow = false;
+        }
+
+        if(currentPlaylist == null) {
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "follow");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Please load a playlist before attempting to follow it.");
+            outputs.add(outputNode);
+            return;
+        }
+
+        UserInformation user = getUserByUsername(userInformationList, username);
+        UserInformation userToFollow = getUserByUsername(userInformationList, currentPlaylist.getOwner());
+
+        Playlist playlistToFollow = null;
+        List<Playlist> playlists = userToFollow.getPlaylists();
+        for(Playlist playlist : playlists) {
+            if(playlist.getName().equals(currentPlaylist.getName())) {
+                playlistToFollow = playlist;
+                break;
+            }
+        }
+        List<String> followedPlaylist = user.getFollowedPlaylists();
+        boolean playlistExists = false;
+        for(String playlistName : followedPlaylist) {
+            if(playlistName.equals(playlistToFollow.getName())) {
+                playlistExists = true;
+                break;
+            }
+        }
+        if(playlistExists) {
+            playlistToFollow.decreaseFollowers();
+            user.unfollowPlaylist(playlistToFollow.getName());
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "follow");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Playlist unfollowed successfully.");
+
+            outputs.add(outputNode);
+        } else {
+            playlistToFollow.increaseFollowers();
+            user.followPlaylist(playlistToFollow.getName());
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "follow");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Playlist followed successfully.");
+            outputs.add(outputNode);
+        }
+
+    }
+
+    public static void handleSwitchVisibilityCommand(LibraryInput library, List<UserInformation> userInformationList, JsonNode commandNode, ArrayNode outputs) {
+        String username = commandNode.get("username").asText();
+        int timestamp = commandNode.get("timestamp").asInt();
+
+        if(currentPlaylist == null) {
+            ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+            outputNode.put("command", "follow");
+            outputNode.put("user", username);
+            outputNode.put("timestamp", timestamp);
+            outputNode.put("message", "Please load a playlist before attempting to follow it.");
+            outputs.add(outputNode);
+            return;
+        }
+
+        UserInformation user = getUserByUsername(userInformationList, username);
+        UserInformation userVisibility = getUserByUsername(userInformationList, currentPlaylist.getOwner());
+        List<Playlist> playlists = userVisibility.getPlaylists();
+        for(Playlist playlist : playlists) {
+            if(playlist.getName().equals(currentPlaylist.getName())) {
+                if(playlist.getVisibilityStatus() == 1) {
+                    playlist.setVisibilityStatus(0);
+                    ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                    outputNode.put("command", "switchVisibility");
+                    outputNode.put("user", username);
+                    outputNode.put("timestamp", timestamp);
+                    outputNode.put("message", "Visibility status updated successfully to private.");
+                    outputs.add(outputNode);
+                } else {
+                    playlist.setVisibilityStatus(1);
+                    ObjectNode outputNode = JsonNodeFactory.instance.objectNode();
+                    outputNode.put("command", "switchVisibility");
+                    outputNode.put("user", username);
+                    outputNode.put("timestamp", timestamp);
+                    outputNode.put("message", "Visibility status updated successfully to public.");
+                    outputs.add(outputNode);
+                }
+                break;
+            }
+        }
+    }
+
 }
