@@ -4,7 +4,13 @@ import java.util.List;
 
 public class SelectHelper {
 
-    public static SongInput getSongByName(LibraryInput library, String songName) {
+    /**
+     * This method returns the song with the given name from the library.
+     * @param library the library from which the song is selected
+     * @param songName the name of the song
+     * @return the song with the given name
+     */
+    public static SongInput getSongByName(final LibraryInput library, final String songName) {
         for (SongInput song : library.getSongs()) {
             if (song.getName().equalsIgnoreCase(songName)) {
                 return song;
@@ -13,7 +19,14 @@ public class SelectHelper {
         return null;
     }
 
-    public static PodcastInput getPodcastByName(LibraryInput library, String podcastName) {
+    /**
+     * This method returns the podcast with the given name from the library.
+     * @param library the library from which the artist is selected
+     * @param podcastName the name of the podcast
+     * @return the podcast with the given name
+     */
+    public static PodcastInput getPodcastByName(final LibraryInput library,
+                                                final String podcastName) {
         for (PodcastInput podcast : library.getPodcasts()) {
             if (podcast.getName().equalsIgnoreCase(podcastName)) {
                 return podcast;
@@ -22,7 +35,17 @@ public class SelectHelper {
         return null;
     }
 
-    public static Playlist getPlaylistByName(LibraryInput library, String playlistName, List<UserInformation> userInformationList, String username) {
+    /**
+     * This method returns the playlist with the given name from the library.
+     * @param library the library from which the artist is selected
+     * @param playlistName the name of the playlist
+     * @param userInformationList the list of users
+     * @param username the username of the user
+     * @return the playlist with the given name
+     */
+    public static Playlist getPlaylistByName(final LibraryInput library, final String playlistName,
+                                             final List<UserInformation> userInformationList,
+                                             final String username) {
 
         UserInformation user = getUserByUsername(userInformationList, username);
 
@@ -31,7 +54,7 @@ public class SelectHelper {
                 return playlist;
             }
         }
-        for(UserInformation userInformation : userInformationList) {
+        for (UserInformation userInformation : userInformationList) {
             for (Playlist playlist : userInformation.getPlaylists()) {
                 if (playlist.getName().equalsIgnoreCase(playlistName)) {
                     return playlist;
@@ -41,7 +64,15 @@ public class SelectHelper {
         return null;
     }
 
-    private static UserInformation getUserByUsername(List<UserInformation> userInformationList, String username) {
+    /**
+     * This method returns the user with the given name from the library.
+     * @param userInformationList the list of users
+     * @param username the username of the user
+     * @return the user with the given name
+     */
+    private static UserInformation getUserByUsername(final List<UserInformation>
+                                                             userInformationList,
+                                                     final String username) {
         for (UserInformation user : userInformationList) {
             if (user.getUsername().equals(username)) {
                 return user;

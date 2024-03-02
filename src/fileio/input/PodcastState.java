@@ -1,9 +1,11 @@
 package fileio.input;
 
+import checker.CheckerConstants;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class PodcastState {
+
     private String selectedPodcastName;
     private boolean isPaused;
     private String repeatState;
@@ -13,8 +15,10 @@ public class PodcastState {
     private int currentEpisodeIndex = 0;
     private int timeRemaining;
 
-    // Constructor
-    public PodcastState(String selectedPodcastName, boolean isPaused, String repeatState, int lastTimestamp, int initialTimestamp, ArrayList<EpisodeInput> episodeNames) {
+    public PodcastState(final String selectedPodcastName, final boolean isPaused,
+                        final String repeatState, final int lastTimestamp,
+                        final int initialTimestamp,
+                        final ArrayList<EpisodeInput> episodeNames) {
         this.selectedPodcastName = selectedPodcastName;
         this.isPaused = isPaused;
         this.repeatState = repeatState;
@@ -23,67 +27,79 @@ public class PodcastState {
         this.episodes = episodeNames;
         updateCurrentEpisodeInfo();
     }
-
+    /**
+     * Getter for the selected podcast name
+     * @return
+     */
     public String getSelectedPodcastName() {
         return selectedPodcastName;
     }
-
+    /**
+     * Getter for time remaining
+     * @return
+     */
     public int getTimeRemaining() {
         return timeRemaining;
     }
-
+    /**
+     * Getter for the repeat state
+     * @return
+     */
     public String getRepeatState() {
         return repeatState;
     }
-
-
+    /**
+     * Getter for paused state
+     * @return
+     */
     public boolean isPaused() {
         return isPaused;
     }
-
-    // Additional episode getters
-    public List<EpisodeInput> getEpisodeNames() {
-        return episodes;
-    }
-
-    public int getCurrentEpisodeIndex() {
-        return currentEpisodeIndex;
-    }
-
-    // Setters
-    public void setSelectedPodcastName(String selectedPodcastName) {
-        this.selectedPodcastName = selectedPodcastName;
-    }
-
-
-    public void setPaused(boolean paused) {
+    /**
+     * Setter for paused state
+     * @return
+     */
+    public void setPaused(final boolean paused) {
         isPaused = paused;
     }
-
-    public void setRepeatState(String repeatState) {
+    /**
+     * Setter for repeat state
+     * @return
+     */
+    public void setRepeatState(final String repeatState) {
         this.repeatState = repeatState;
     }
-
-    public void setLastTimestamp(int lastTimestamp) {
+    /**
+     * Setter for last timestamp
+     * @return
+     */
+    public void setLastTimestamp(final int lastTimestamp) {
         this.lastTimestamp = lastTimestamp;
     }
-
-    public void setInitialTimestamp(int initialTimestamp) {
+    /**
+     * Setter for initial timestamp
+     * @return
+     */
+    public void setInitialTimestamp(final int initialTimestamp) {
         this.initialTimestamp = initialTimestamp;
     }
-
-
+    /**
+     * Method to update the current episode info
+     * @return
+     */
     private void updateCurrentEpisodeInfo() {
         timeRemaining = episodes.get(currentEpisodeIndex).getDuration();
     }
-
+    /**
+     * Method to calculate the time remaining
+     * @return
+     */
     public int calculateTimeRemaining() {
         if (isPaused) {
             return timeRemaining;
         } else {
             int elapsedTime = lastTimestamp - initialTimestamp;
-            // check if you need to go to the next episode
-            while(elapsedTime >= timeRemaining) {
+            while (elapsedTime >= timeRemaining) {
                 elapsedTime -= timeRemaining;
                 currentEpisodeIndex++;
                 if (repeatState.equals("Repeat Once")) {
@@ -91,7 +107,7 @@ public class PodcastState {
                     repeatState = "No Repeat";
                 }
                 if (currentEpisodeIndex >= episodes.size()) {
-                    if(repeatState.equals("No Repeat")) {
+                    if (repeatState.equals("No Repeat")) {
                         currentEpisodeIndex = 0;
                         return 0;
                     } else if (repeatState.equals("Repeat Infinite")) {
@@ -103,14 +119,25 @@ public class PodcastState {
             return Math.max(0, timeRemaining - elapsedTime);
         }
     }
-    public void setTimeRemaining(int timeRemaining) {
+    /**
+     * Setter for time remaining
+     * @return
+     */
+    public void setTimeRemaining(final int timeRemaining) {
         this.timeRemaining = timeRemaining;
     }
+    /**
+     * Getter for the current episode name
+     * @return
+     */
     public String getSelectedEpisodeName() {
         return episodes.get(currentEpisodeIndex).getName();
     }
-
-    public boolean next(int timestamp) {
+    /**
+     * Method for the next episode
+     * @return
+     */
+    public boolean next(final int timestamp) {
         initialTimestamp = timestamp;
         lastTimestamp = timestamp;
         currentEpisodeIndex++;
@@ -119,7 +146,7 @@ public class PodcastState {
             repeatState = "No Repeat";
         }
         if (currentEpisodeIndex >= episodes.size()) {
-            if(repeatState.equals("No Repeat")) {
+            if (repeatState.equals("No Repeat")) {
                 currentEpisodeIndex = 0;
                 return true;
             } else if (repeatState.equals("Repeat Infinite")) {
@@ -129,32 +156,42 @@ public class PodcastState {
         updateCurrentEpisodeInfo();
         return false;
     }
-
-    public void prev(int timestamp) {
+    /**
+     * Method for the previous episode
+     * @return
+     */
+    public void prev(final int timestamp) {
         initialTimestamp = timestamp;
         lastTimestamp = timestamp;
-        if(isPaused == true) {
+        if (isPaused) {
             isPaused = false;
         }
         updateCurrentEpisodeInfo();
     }
-
-    public boolean forward(int timestamp) {
+    /**
+     * Method for the forward 90 seconds
+     * @return
+     */
+    public boolean forward(final int timestamp) {
         lastTimestamp = timestamp;
         calculateTimeRemaining();
-        if(timeRemaining > 90) {
-            timeRemaining += 90;
+        if (timeRemaining > 90) {
+            timeRemaining -= 90;
             return false;
         } else {
             return next(timestamp);
         }
     }
-
-    public void backward(int timestamp) {
+    /**
+     * Method for the backward 90 seconds
+     * @return
+     */
+    public void backward(final int timestamp) {
         lastTimestamp = timestamp;
         calculateTimeRemaining();
-        if(episodes.get(currentEpisodeIndex).getDuration() - timeRemaining > 90) {
-            timeRemaining -= 90;
+        if (episodes.get(currentEpisodeIndex).getDuration() - timeRemaining
+                > 90) {
+            timeRemaining += 90;
         } else {
             prev(timestamp);
         }

@@ -2,9 +2,18 @@ package fileio.input;
 
 public class RepeatStateConverter {
 
-    public static String convertToText(int repeatState, boolean loadedSong, boolean loadedPlaylist, boolean loadedPodcast) {
+    /**
+     * Converts the repeat state to text
+     * @param repeatState
+     * @param loadedSong
+     * @param loadedPlaylist
+     * @param loadedPodcast
+     * @return
+     */
+    public static String convertToText(final int repeatState, final boolean loadedSong,
+                                       final boolean loadedPlaylist,
+                                       final boolean loadedPodcast) {
         if (loadedPlaylist) {
-            // Check if playlist is loaded
             switch (repeatState) {
                 case 0:
                     return "No Repeat";
@@ -16,7 +25,6 @@ public class RepeatStateConverter {
                     return "Unknown State";
             }
         } else if (loadedSong || loadedPodcast) {
-            // Check if a song is loaded
             switch (repeatState) {
                 case 0:
                     return "No Repeat";
@@ -28,7 +36,6 @@ public class RepeatStateConverter {
                     return "Unknown State";
             }
         } else {
-            // Neither song nor playlist is loaded
             return "No Media Loaded";
         }
     }

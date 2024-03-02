@@ -1,9 +1,6 @@
 package fileio.input;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-
 
 public class UserInformation {
     private String username;
@@ -13,8 +10,7 @@ public class UserInformation {
     private List<Playlist> playlists;
     private List<String> followedPlaylists;
 
-    // Constructor
-    public UserInformation(String username, int age, String city) {
+    public UserInformation(final String username, final int age, final String city) {
         this.username = username;
         this.age = age;
         this.city = city;
@@ -23,85 +19,80 @@ public class UserInformation {
         this.followedPlaylists = new ArrayList<>();
     }
 
-    // Getters and setters for basic user information
-
+    /**
+     * @return the name of the user
+     */
     public String getUsername() {
         return username;
     }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    // Liked songs methods
-
+    /**
+     * @return the playlist of liked songs
+     */
     public List<String> getLikedSongs() {
         return likedSongs;
     }
 
-    public void likeSong(String songName) {
+    /**
+     * Method that adds a song to the list of liked songs
+     * @param songName the name of the song to be added
+     */
+    public void likeSong(final String songName) {
         likedSongs.add(songName);
     }
-
+    /**
+     * Method that removes a song from the list of liked songs
+     * @param songName the name of the song to be removed
+     */
     public void unlikeSong(String songName) {
         likedSongs.remove(songName);
     }
-
-    // Playlist methods
-
+    /**
+     *  Getter for the playlists
+     *  @return the list of playlists
+     */
     public List<Playlist> getPlaylists() {
         return playlists;
     }
-
-    //getter for a certain playlist songs
-
-    public void createPlaylist(String playlistName, int visibilityStatus, String owner, int timeCreated) {
-        Playlist playlist = new Playlist(playlistName, visibilityStatus, owner, timeCreated);
+    /**
+     * Method that creates a playlist
+     * @param playlistName the name of the playlist to be created
+     * @param visibilityStatus the visibility status of the playlist to be created
+     * @param owner the owner of the playlist to be created
+     */
+    public void createPlaylist(final String playlistName, final int visibilityStatus,
+                               final String owner) {
+        Playlist playlist = new Playlist(playlistName, visibilityStatus, owner);
         playlists.add(playlist);
     }
 
-    public void addSongToPlaylist(String playlistName, SongInput songName) {
-        Playlist playlist = findPlaylistByName(playlistName);
-        if (playlist != null) {
-            playlist.addSong(songName);
-        }
-    }
-
-    public void removeSongFromPlaylist(String playlistName, SongInput songName) {
-        Playlist playlist = findPlaylistByName(playlistName);
-        if (playlist != null) {
-            playlist.removeSong(songName);
-        }
-    }
-
-    // Followed playlists methods
-
+    /**
+    * Getter for the followed playlists
+     * @return the list of followed playlists
+     */
     public List<String> getFollowedPlaylists() {
         return followedPlaylists;
     }
 
-    public void followPlaylist(String playlistName) {
+    /**
+     * Method that follows a playlist
+     * @param playlistName the name of the playlist
+     */
+    public void followPlaylist(final String playlistName) {
         followedPlaylists.add(playlistName);
     }
-
-    public void unfollowPlaylist(String playlistName) {
+    /**
+     * Method that unfollows a playlist
+     * @param playlistName the name of the playlist
+     */
+    public void unfollowPlaylist(final String playlistName) {
         followedPlaylists.remove(playlistName);
     }
-
-    // Helper method to find a playlist by name
-    private Playlist findPlaylistByName(String playlistName) {
-        for (Playlist playlist : playlists) {
-            if (playlist.getName().equals(playlistName)) {
-                return playlist;
-            }
-        }
-        return null;
-    }
-    public boolean playlistExists(String playlistName) {
+    /**
+     * Method that checks if a playlist exists
+     * @param playlistName the name of the playlist
+     * @return true if the playlist exists, false otherwise
+     */
+    public boolean playlistExists(final String playlistName) {
         for (Playlist playlist : playlists) {
             if (playlist.getName().equals(playlistName)) {
                 return true;
@@ -109,12 +100,21 @@ public class UserInformation {
         }
         return false;
     }
-
-    public static boolean containsSong(Playlist playlist, SongInput songName) {
+    /**
+     * Method that checks if a song exists in the list of liked songs
+     * @param songName the name of the song
+     * @return true if the song exists, false otherwise
+     */
+    public static boolean containsSong(final Playlist playlist, final SongInput songName) {
         return playlist.getSongs().contains(songName);
     }
-
-    public int getFollowers(List<UserInformation> userInformationList, Playlist playlist) {
+    /**
+     * Method that gets the number of followers of a playlist
+     * @param userInformationList the list of users
+     * @param playlist the playlist
+     * @return the number of followers
+     */
+    public int getFollowers(final List<UserInformation> userInformationList, final Playlist playlist) {
         int followersCount = 0;
 
         for (UserInformation user : userInformationList) {
@@ -125,8 +125,12 @@ public class UserInformation {
 
         return followersCount;
     }
-
-    private boolean isFollowingPlaylist(Playlist playlist) {
+    /**
+     * Method that checks if a user is following a playlist
+     * @param playlist the playlist
+     * @return true if the user is following the playlist, false otherwise
+     */
+    private boolean isFollowingPlaylist(final Playlist playlist) {
         for (String followedPlaylistName : followedPlaylists) {
             if (followedPlaylistName.equals(playlist.getName())) {
                 return true;

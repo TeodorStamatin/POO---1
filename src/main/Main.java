@@ -96,7 +96,8 @@ public final class Main {
 
         ArrayNode outputs = objectMapper.createArrayNode();
 
-        JsonNode input = objectMapper.readTree(new File(CheckerConstants.TESTS_PATH + filePathInput));
+        JsonNode input = objectMapper.readTree(new File(CheckerConstants.TESTS_PATH
+                + filePathInput));
 
         for (JsonNode commandNode : input) {
 
@@ -125,19 +126,23 @@ public final class Main {
                     Command.handleStatusCommand(library, commandNode, outputs);
                     break;
                 case "createPlaylist":
-                    Command.handleCreatePlaylistCommand(library, userInformationList, commandNode, outputs);
+                    Command.handleCreatePlaylistCommand(library, userInformationList, commandNode,
+                            outputs);
                     break;
                 case "like":
                     Command.handleLikeCommand(library, userInformationList, commandNode, outputs);
                     break;
                 case "addRemoveInPlaylist":
-                    Command.handleAddRemoveInPlaylistCommand(library, userInformationList, commandNode, outputs);
+                    Command.handleAddRemoveInPlaylistCommand(library, userInformationList,
+                            commandNode, outputs);
                     break;
                 case "showPreferredSongs":
-                    Command.handlePrefferedSongs(library, userInformationList, commandNode, outputs);
+                    Command.handlePrefferedSongs(library, userInformationList, commandNode,
+                            outputs);
                     break;
                 case "showPlaylists":
-                    Command.handleShowPlaylistsCommand(library, userInformationList, commandNode, outputs);
+                    Command.handleShowPlaylistsCommand(library, userInformationList, commandNode,
+                            outputs);
                     break;
                 case "next":
                     Command.handleNextCommand(library, commandNode, outputs);
@@ -155,13 +160,10 @@ public final class Main {
                     Command.handleFollowCommand(library, userInformationList, commandNode, outputs);
                     break;
                 case "switchVisibility":
-                    Command.handleSwitchVisibilityCommand(library, userInformationList, commandNode, outputs);
+                    Command.handleSwitchVisibilityCommand(library, userInformationList,
+                            commandNode, outputs);
                     break;
-                case "getTop5Playlists":
-                    Command.handleGetTop5PlaylistsCommand(library, userInformationList, commandNode, outputs);
-                    break;
-                case "getTop5Songs":
-                    Command.handleGetTop5SongsCommand(library, userInformationList, commandNode, outputs);
+                default:
                     break;
             }
         }

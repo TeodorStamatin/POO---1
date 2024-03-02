@@ -3,45 +3,28 @@ package fileio.input;
 import java.util.List;
 
 public class PlaylistState {
-    public String getSelectedPlaylistName() {
-        return selectedPlaylistName;
-    }
 
     private String selectedPlaylistName;
-
-    public boolean isShuffleEnabled() {
-        return isShuffleEnabled;
-    }
-
     private boolean isShuffleEnabled;
-
-    public boolean isPaused() {
-        return isPaused;
-    }
-
     private boolean isPaused;
-
-    public String getRepeatState() {
-        return repeatState;
-    }
-
     private String repeatState;
     private int lastTimestamp;
     private int initialTimestamp;
-
     private List<SongInput> tracks;
     private int currentTrackIndex = 0;
     private int timeRemaining;
     private int duration;
-    int savedTrackIndex;
-    int savedTimeRemaining;
-    List<Integer> shuffleOrder;
-    int currentShuffleIndex = 0;
-    Boolean waitSong = false;
+    private int savedTrackIndex;
+    private List<Integer> shuffleOrder;
+    private int currentShuffleIndex = 0;
+    private Boolean waitSong = false;
     private String owner;
 
     // Constructor
-    public PlaylistState(String selectedPlaylistName, boolean isShuffleEnabled, boolean isPaused, String repeatState, int lastTimestamp, int initialTimestamp, List<SongInput> tracks, String owner) {
+    public PlaylistState(final String selectedPlaylistName, final boolean isShuffleEnabled,
+                         final boolean isPaused, final String repeatState,
+                         final int lastTimestamp, final int initialTimestamp,
+                         final List<SongInput> tracks, final String owner) {
         this.selectedPlaylistName = selectedPlaylistName;
         this.isShuffleEnabled = isShuffleEnabled;
         this.isPaused = isPaused;
@@ -52,59 +35,105 @@ public class PlaylistState {
         this.owner = owner;
         updateCurrentTrackInfo();
     }
-    public int getCurrentTrackIndex() {
-        return currentTrackIndex;
-    }
-    public void setCurrentTrackIndex(int currentTrackIndex) {
-        this.currentTrackIndex = currentTrackIndex;
-    }
 
+    /**
+     * Getter for paused state
+     * @return
+     */
+    public boolean isPaused() {
+        return isPaused;
+    }
+    /**
+     * Getter selected playlist name
+     * @return
+     */
+    public String getSelectedPlaylistName() {
+        return selectedPlaylistName;
+    }
+    /**
+     * Getter for the repeat state
+     * @return
+     */
+    public String getRepeatState() {
+        return repeatState;
+    }
+    /**
+     * Getter for all the tracks
+     * @return
+     */
     public List<SongInput> gettracks() {
         return tracks;
     }
-
+    /**
+     * Getter for owner of the playlist
+     * @return
+     */
     public String getOwner() {
         return owner;
     }
-    // Setters
-    public void setSelectedPlaylistName(String selectedPlaylistName) {
-        this.selectedPlaylistName = selectedPlaylistName;
+    /**
+     * Getter for shuffle state
+     * @return
+     */
+    public boolean isShuffleEnabled() {
+        return isShuffleEnabled;
     }
-
-    public void setShuffleEnabled(boolean shuffleEnabled) {
+    /**
+     * Setter for shuffle state
+     * @return
+     */
+    public void setShuffleEnabled(final boolean shuffleEnabled) {
         isShuffleEnabled = shuffleEnabled;
     }
-
-    public void setPaused(boolean paused) {
+    /**
+     * Setter for paused state
+     * @return
+     */
+    public void setPaused(final boolean paused) {
         isPaused = paused;
     }
-
-    public void setRepeatState(String repeatState) {
+    /**
+     * Setter for repeat state
+     * @return
+     */
+    public void setRepeatState(final String repeatState) {
         this.repeatState = repeatState;
     }
-
-    public void setLastTimestamp(int lastTimestamp) {
+    /**
+     * Setter for last timestamp
+     * @return
+     */
+    public void setLastTimestamp(final int lastTimestamp) {
         this.lastTimestamp = lastTimestamp;
     }
-
-    public void setInitialTimestamp(int initialTimestamp) {
+    /**
+     * Setter for initial timestamp
+     * @return
+     */
+    public void setInitialTimestamp(final int initialTimestamp) {
         this.initialTimestamp = initialTimestamp;
     }
-
+    /**
+     * Method to update the current track info
+     * @return
+     */
     public void updateCurrentTrackInfo() {
         duration = tracks.get(currentTrackIndex).getDuration();
         timeRemaining = tracks.get(currentTrackIndex).getDuration();
     }
-
+    /**
+     * Method to calculate the time remaining
+     * @return
+     */
     public int calculateTimeRemaining() {
         if (isPaused) {
             return timeRemaining;
         } else {
             int elapsedTime = lastTimestamp - initialTimestamp;
 
-            if(isShuffleEnabled) {
-                while(elapsedTime >= timeRemaining) {
-                    if(waitSong) {
+            if (isShuffleEnabled) {
+                while (elapsedTime >= timeRemaining) {
+                    if (waitSong) {
                         waitSong = false;
                         elapsedTime -= timeRemaining;
                         currentShuffleIndex = savedTrackIndex;
@@ -119,7 +148,7 @@ public class PlaylistState {
                             currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
                         }
                         if (currentShuffleIndex >= tracks.size()) {
-                            if(repeatState.equals("Repeat All")) {
+                            if (repeatState.equals("Repeat All")) {
                                 currentShuffleIndex = 0;
                                 currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
                             } else {
@@ -132,12 +161,12 @@ public class PlaylistState {
                     }
                 }
             } else {
-                while(elapsedTime >= timeRemaining) {
-                    if(waitSong) {
+                while (elapsedTime >= timeRemaining) {
+                    if (waitSong) {
                         waitSong = false;
                         elapsedTime -= timeRemaining;
                         currentTrackIndex++;
-                        if(currentTrackIndex >= tracks.size()) {
+                        if (currentTrackIndex >= tracks.size()) {
                             currentTrackIndex = 0;
                             return 0;
                         }
@@ -149,7 +178,7 @@ public class PlaylistState {
                             currentTrackIndex--;
                         }
                         if (currentTrackIndex >= tracks.size()) {
-                            if(repeatState.equals("Repeat All")) {
+                            if (repeatState.equals("Repeat All")) {
                                 currentTrackIndex = 0;
                             } else {
                                 currentTrackIndex = 0;
@@ -163,47 +192,74 @@ public class PlaylistState {
             return Math.max(0, timeRemaining - elapsedTime);
         }
     }
-    public void setTimeRemaining(int timeRemaining) {
+    /**
+     * Setter for the time remaining
+     * @return
+     */
+    public void setTimeRemaining(final int timeRemaining) {
         this.timeRemaining = timeRemaining;
     }
+    /**
+     * Getter for the time remaining
+     * @return
+     */
     public int getTimeRemaining() {
         return timeRemaining;
     }
-
+    /**
+     * Getter for the name of the current track
+     * @return
+     */
     public String getSelectedTrackName() {
         return tracks.get(currentTrackIndex).getName();
     }
-    public void shuffleOn(List<Integer> shuffleOrder) {
+    /**
+     * Method that makes the necessary changes when the shuffle is enabled
+     * @return
+     */
+    public void shuffleOn(final List<Integer> shuffleOrder) {
 
-        if(!isShuffleEnabled) {
+        if (!isShuffleEnabled) {
             savedTrackIndex = currentTrackIndex + 1;
         }
 
         this.shuffleOrder = shuffleOrder;
         waitSong = true;
     }
+    /**
+     * Method that makes the necessary changes when the shuffle is disabled
+     * @return
+     */
     public void shuffleOff() {
 
         waitSong = true;
         currentShuffleIndex = currentTrackIndex;
         currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
     }
+    /**
+     * Method that resets the playlist
+     * @return
+     */
     public void reset() {
         currentTrackIndex = 0;
         isShuffleEnabled = false;
         updateCurrentTrackInfo();
     }
-    public boolean next(int timestamp) {
+    /**
+     * Method for the next song
+     * @return
+     */
+    public boolean next(final int timestamp) {
         lastTimestamp = timestamp;
         initialTimestamp = timestamp;
-        if(isShuffleEnabled) {
+        if (isShuffleEnabled) {
             currentShuffleIndex++;
             if (repeatState.equals("Repeat Current Song")) {
                 currentShuffleIndex--;
                 currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
             }
             if (currentShuffleIndex >= tracks.size()) {
-                if(repeatState.equals("Repeat All")) {
+                if (repeatState.equals("Repeat All")) {
                     currentShuffleIndex = 0;
                     currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
                 } else {
@@ -220,7 +276,7 @@ public class PlaylistState {
                 currentTrackIndex--;
             }
             if (currentTrackIndex >= tracks.size()) {
-                if(repeatState.equals("Repeat All")) {
+                if (repeatState.equals("Repeat All")) {
                     currentTrackIndex = 0;
                 } else {
                     currentTrackIndex = 0;
@@ -232,26 +288,29 @@ public class PlaylistState {
         }
         return false;
     }
-
-    public void prev(int timestamp) {
+    /**
+     * Method for the previous song
+     * @return
+     */
+    public void prev(final int timestamp) {
         lastTimestamp = timestamp;
         calculateTimeRemaining();
-        if(timeRemaining == duration) {
-            if(isShuffleEnabled) {
+        if (timeRemaining == duration) {
+            if (isShuffleEnabled) {
                 currentShuffleIndex--;
-                if(currentShuffleIndex < 0) {
+                if (currentShuffleIndex < 0) {
                     currentShuffleIndex = 0;
                     currentTrackIndex = shuffleOrder.get(currentShuffleIndex);
                 }
             } else {
                 currentTrackIndex--;
-                if(currentTrackIndex < 0) {
+                if (currentTrackIndex < 0) {
                     currentTrackIndex = 0;
                 }
             }
         }
         initialTimestamp = timestamp;
-        if(isPaused == true) {
+        if (isPaused) {
             isPaused = false;
         }
         updateCurrentTrackInfo();

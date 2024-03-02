@@ -1,30 +1,42 @@
 package fileio.input;
 
-
-import java.time.Duration;
-
 public class PlayerState {
+    /**
+     * The name of the song that is currently selected
+     */
     private String selectedSongName;
+    /**
+     * The shuffle state of the player
+     */
     private boolean isShuffleEnabled;
+    /**
+     * The pause state of the player
+     */
     private boolean isPaused;
+    /**
+     * The repeat state of the player
+     */
     private String repeatState;
-
-    public int getLastTimestamp() {
-        return lastTimestamp;
-    }
-
+    /**
+     * The last timestamp of the player
+     */
     private int lastTimestamp;
+    /**
+     * The duration of the song
+     */
     private int duration;
+    /**
+     * The time remaining of the song
+     */
     private int timeRemaining;
-
-    public int getInitialTimestamp() {
-        return initialTimestamp;
-    }
-
+    /**
+     * The initial timestamp of the player
+     */
     private int initialTimestamp;
 
-    // Constructor
-    public PlayerState(String selectedSongName, boolean isShuffleEnabled, boolean isPaused, String repeatState, int lastTimestamp, int duration, int timeRemaining, int initialTimestamp) {
+    public PlayerState(final String selectedSongName, final boolean isShuffleEnabled, final
+    boolean isPaused, final String repeatState, final int lastTimestamp, final int duration,
+                       final int timeRemaining, final int initialTimestamp) {
         this.selectedSongName = selectedSongName;
         this.isShuffleEnabled = isShuffleEnabled;
         this.isPaused = isPaused;
@@ -34,70 +46,100 @@ public class PlayerState {
         this.timeRemaining = timeRemaining;
         this.initialTimestamp = initialTimestamp;
     }
+
+    /**
+     * Constructor for the player state
+     * @return
+     */
     public String getSelectedSongName() {
         return selectedSongName;
     }
 
+    /**
+     * Getter for the last timestamp
+     * @return
+     */
     public int getTimeRemaining() {
         return timeRemaining;
     }
+    /**
+     * Getter for the last timestamp
+     * @return
+     */
     public String getRepeatState() {
         return repeatState;
     }
-    public boolean isShuffleEnabled() {
-        return isShuffleEnabled;
-    }
-
+    /**
+     * Getter for the last timestamp
+     * @return
+     */
     public boolean isPaused() {
         return isPaused;
     }
-
-    // Setters
-    public void setSelectedSongName(String selectedSongName) {
+    /**
+     * Getter for the last timestamp
+     * @return
+     */
+    public void setSelectedSongName(final String selectedSongName) {
         this.selectedSongName = selectedSongName;
     }
-
-    public void setShuffleEnabled(boolean shuffleEnabled) {
-        isShuffleEnabled = shuffleEnabled;
-    }
-
-    public void setPaused(boolean paused) {
+    /**
+     * Getter for the last timestamp
+     * @return
+     */
+    public void setPaused(final boolean paused) {
         isPaused = paused;
     }
-
-    public void setRepeatState(String repeatState) {
+    /**
+     * Getter for the last timestamp
+     * @return
+     */
+    public void setRepeatState(final String repeatState) {
         this.repeatState = repeatState;
     }
-
-    public void setLastTimestamp(int lastTimestamp) {
+    /**
+     * Getter for the last timestamp
+     * @return
+     */
+    public void setLastTimestamp(final int lastTimestamp) {
         this.lastTimestamp = lastTimestamp;
     }
-
-    public void setDuration(int duration) {
-        this.duration = duration;
-    }
-
-    public void setTimeRemaining(int timeRemaining) {
+    /**
+     * Getter for the last timestamp
+     * @return
+     */
+    public void setTimeRemaining(final int timeRemaining) {
         this.timeRemaining = timeRemaining;
     }
-
-    public void setInitialTimestamp(int initialTimestamp) {
+    /**
+     * Getter for the last timestamp
+     * @return
+     */
+    public void setInitialTimestamp(final int initialTimestamp) {
         this.initialTimestamp = initialTimestamp;
     }
+    /**
+     * Method that updates the current song duration
+     * @return
+     */
     private void updateCurrentSongDuration() {
         timeRemaining = duration;
     }
+    /**
+     * Method that updates the time remaining
+     * @return
+     */
     public int calculateTimeRemaining() {
         if (isPaused) {
             return timeRemaining;
         } else {
             int elapsedTime = lastTimestamp - initialTimestamp;
-            while(elapsedTime > timeRemaining) {
-                if(repeatState.equals("No Repeat")) {
+            while (elapsedTime > timeRemaining) {
+                if (repeatState.equals("No Repeat")) {
                     return 0;
-                } else if(repeatState.equals("Repeat Infinite")) {
+                } else if (repeatState.equals("Repeat Infinite")) {
                     elapsedTime -= timeRemaining;
-                } else if(repeatState.equals("Repeat Once")) {
+                } else if (repeatState.equals("Repeat Once")) {
                     elapsedTime -= timeRemaining;
                     repeatState = "No Repeat";
                 }
@@ -106,25 +148,29 @@ public class PlayerState {
             return Math.max(0, timeRemaining - elapsedTime);
         }
     }
-
-    public boolean next(int timestamp) {
+    /**
+     * Method for the next song
+     * @return
+     */
+    public boolean next(final int timestamp) {
         initialTimestamp = timestamp;
         lastTimestamp = timestamp;
-        if(repeatState.equals("No Repeat")) {
+        if (repeatState.equals("No Repeat")) {
             return true;
-        } else if(repeatState.equals("Repeat Infinite")) {
-
-        } else if(repeatState.equals("Repeat Once")) {
+        } else if (repeatState.equals("Repeat Once")) {
             repeatState = "No Repeat";
         }
         updateCurrentSongDuration();
         return false;
     }
-
-    public void prev(int timestamp) {
+    /**
+     * Method for the previous song
+     * @return
+     */
+    public void prev(final int timestamp) {
         initialTimestamp = timestamp;
         lastTimestamp = timestamp;
-        if(isPaused == true) {
+        if (isPaused) {
             isPaused = false;
         }
         updateCurrentSongDuration();
